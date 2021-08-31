@@ -7,9 +7,10 @@ Main CSS file (main.css)
 CSS VARIABLES
 -------------------------------------------------------------------------------------------------------
 */
-
-/* ---varcolour(---white) ??? */
-
+:root
+{
+	--maincolour: grey;
+}
 
 /*
 -------------------------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ COMMON STYLES
 
 body
 {
-    background-color: green;
+    background-color: var(--maincolour);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
