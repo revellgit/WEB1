@@ -26,6 +26,7 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header
@@ -37,15 +38,38 @@ body
 
 .nav_bar
 {  
+    display: flex;
     position: fixed;
-    margin: 0;
-    
+    margin: 0;    
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 75%;
     height: 7vh;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);    
+}
+
+.links
+{
+    width: 50%;
+}
+
+.nav_burger
+{  
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 2vh;  
+    width: 5%;
+    height: 100%;
+}
+
+.line_1, .line_2
+{
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
 }
 
 .container_main
@@ -54,7 +78,6 @@ body
     background-color: yellow;
     justify-content: center;
 }
-
 
 footer
 {
