@@ -1,5 +1,6 @@
-# WEB1
-Repo for Intro to Web course - Website files: HTML, CSS, JS, resources
+# Fundamentals of Web Development (IN512 Web 1)
+
+Github repository for website files : HTML, CSS, JS, resources, design sketches ...
 
 Template/Design Reference Site : https://clay.global/
 
