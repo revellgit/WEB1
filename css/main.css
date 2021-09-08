@@ -10,8 +10,8 @@ CSS VARIABLES
 :root
 {
 	--maincolour: grey;
-    --dropdown: black;
-    --footercolour: darkgrey;
+    --dropdown: darkgrey;
+    --footercolour: #333333;
 }
 
 /*
@@ -27,6 +27,7 @@ body
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+	font-family: Arial, sans-serif;
 }
 
 .header
@@ -52,6 +53,31 @@ body
 .links
 {
     width: 50%;
+    
+}
+
+.links a
+{
+    font-size: 36px;
+
+}
+
+a:link 
+{
+    text-decoration: none;
+    color: white;
+}
+  
+a:visited 
+{
+    text-decoration: none;
+    color: white;
+}
+  
+a:active 
+{
+    text-decoration: underline;
+    color: white;
 }
 
 .nav_burger
@@ -59,7 +85,7 @@ body
     cursor: pointer;
     margin-left: auto;
     margin-top: 2vh;  
-    width: 5%;
+    width: 2%;
     height: 100%;
 }
 
@@ -75,15 +101,67 @@ body
 .container_main
 {
     display: flex;    
-    background-color: yellow;
     justify-content: center;
+    background-color: yellow;
 }
 
 footer
 {
-    height: 80vh;
+    display: flex;    
+    justify-content: center;
+    height: 83vh;
     background-color: var(--footercolour);
     color: white;
+}
+
+.footer_wrapper
+{
+    width: 80vw;
+    height: 100%;
+	
+}
+
+.footer_top
+{
+	height: 50%;
+}
+
+.footer_caption
+{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.footer_email
+{
+    width: fit-content;
+    font-size: 36px;
+}
+
+.footer_bottom
+{
+    display: flex;
+	height: 50%;
+}
+
+.footer_address
+{
+    width: 50%;
+    font-size: 18px;
+    
+}
+
+.footer_address span
+{
+    display: block;
+}
+
+.footer_links
+{
+    width: 50%;
+    display: grid;
+    font-size: 16px;
 }
 
 /*
@@ -91,6 +169,7 @@ footer
 INDEX PAGE STYLES
 -------------------------------------------------------------------------------------------------------
 */
+
 .main_content
 {
     width: 80vw;    
@@ -99,8 +178,7 @@ INDEX PAGE STYLES
 .header_content
 {
     display: flex;
-    justify-self: center;
-    
+    justify-self: center;    
     color:white;    
 }
 
