@@ -66,6 +66,26 @@ body
     height: 100%;
 }
 
+.big_menu
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: blueviolet;
+    width: 50%;
+    height: 50%;
+}
+
+.menu_open
+{
+    display: block;
+}
+
+.menu_closed
+{
+    display: none;
+}
+
 .links a
 {
     font-size: 36px;
@@ -231,6 +251,19 @@ INDEX PAGE STYLES
     height: 150vh;
     background-color: var(--dropdown);
     color: white;
+}
+
+.div_open
+{
+    display: block;
+}
+
+.box_1
+{
+    display: none;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;    
 }
 
 .hover_images
