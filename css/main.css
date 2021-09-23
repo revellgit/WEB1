@@ -274,11 +274,12 @@ INDEX PAGE STYLES
 
 .carousel
 {
-    z-index: 999;
+    /* z-index: 999; */
     justify-content: normal;
     width: 100vw;
     height: 25vh;
     background-color: aqua;
+	overflow: hidden;
 }
 
 /*

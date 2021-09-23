@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Splide image gallery -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Home</title>
@@ -47,7 +52,19 @@
             
         </div>
     </div>
-            <div class="carousel">IMAGE CAROUSEL</div>
+            <div class="carousel">
+				<div class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
+							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
+							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
+						</ul>
+					</div>
+				</div>
+				IMAGE CAROUSEL
+			</div>
+			<script> new Splide( '.splide' ).mount(); </script>
 
             <div class="dropdown_faq">
                 <div class="text_1">
