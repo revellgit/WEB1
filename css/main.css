@@ -246,6 +246,12 @@ INDEX PAGE STYLES
     background-color: burlywood;
 }
 
+.faq_wrapper
+{
+	display: flex;    
+    justify-content: center;
+}
+
 .dropdown_faq
 {
     height: 150vh;
