@@ -296,9 +296,14 @@ INDEX PAGE STYLES
 .box_1
 {
     display: none;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-color: black;    
+}
+
+.faq_open
+{
+    display: inline-block;
 }
 
 .hover_images

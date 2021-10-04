@@ -32,6 +32,30 @@ function burger()
 
 function opendiv()
 {
+
+   const all_btn = document.querySelectorAll(".faq_toggle_btn");
+   console.log(all_btn);
+
+   all_btn.forEach((item) => {
+      item.addEventListener('click', () => {
+   /* console.log(btn);
+
+   btn.addEventListener('click', () => { */
+      /* const box_div = e.target.parentNode.id; */
+      /* console.log(box_div); */
+         const next = item.nextElementSibling;
+         console.log(next);
+      /* alert(e.target.parentNode.id); */
+
+         const check = next.classList.toggle('faq_open');
+         console.log(check);
+      })
+   })
+
+
+   
+
+   /*
    const div_button = document.querySelector('#button_1');
    const div_box = document.querySelector('.box_1');
 
@@ -46,4 +70,6 @@ function opendiv()
          div_open = false;
       }
    })
+   */
 }
+
