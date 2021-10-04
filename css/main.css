@@ -110,8 +110,6 @@ a:active
     color: white;
 }
 
-
-
 .line_1, .line_2
 {
     width: 100%;
@@ -131,11 +129,17 @@ a:active
 
 footer
 {
+    
     display: flex;    
     justify-content: center;
     height: 83vh;
     background-color: var(--footercolour);
     color: white;
+}
+
+footer span 
+{
+    z-index: 2;
 }
 
 .footer_wrapper
@@ -198,6 +202,31 @@ footer
     width: 50%;
     height: 100%;
     display: grid;
+}
+
+.animate_underline
+{    
+    position: relative;
+    /* display: block;	*/
+}
+
+.animate_underline::before
+{
+	content: "";
+    z-index: -1;	
+	position: absolute;
+	width: 100%;
+	bottom: -3px;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+	transform-origin: bottom;
+	transition: height 0.3s;	
+}
+
+.animate_underline:hover::before
+{
+	cursor: pointer;
+	height: 20px;
 }
 
 /*
