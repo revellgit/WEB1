@@ -20,6 +20,12 @@ COMMON STYLES
 -------------------------------------------------------------------------------------------------------
 */
 
+@font-face
+{
+    font-family: myFont;
+    src: url(../resources/fonts/texgyreheros-regular.otf);
+}
+
 body
 {
     background-color: var(--maincolour);
@@ -29,6 +35,7 @@ body
     overflow-x: hidden;
 	font-family: Arial, sans-serif;
     max-width: 100vw;
+    font-family: myFont;
 }
 
 .header
