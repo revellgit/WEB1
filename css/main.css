@@ -33,9 +33,9 @@ body
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-	font-family: Arial, sans-serif;
+	/* font-family: Arial, sans-serif; */
     max-width: 100vw;
-    font-family: myFont;
+    font-family: myFont, Arial, sans-serif;
 }
 
 .header
@@ -280,6 +280,7 @@ INDEX PAGE STYLES
 {
     height: 85%;
     background-color: burlywood;
+    overflow: hidden;
 }
 
 .faq_wrapper
