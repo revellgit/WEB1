@@ -378,7 +378,33 @@ CLIENTS PAGE STYLES
 -------------------------------------------------------------------------------------------------------
 */
 
+.clients_header
+{
+    height: 25vh;
+    background-color: aqua;
+}
 
+.clients_titles
+{
+    margin: auto;
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+.clients_boxes
+{
+    margin: auto;
+    height: 330vh;
+    background-color: cadetblue;
+}
+
+.clients_quotes
+{
+    margin: auto;
+    height: 62vh;
+    background-color: black;
+    color: white;
+}
 /*
 -------------------------------------------------------------------------------------------------------
 WORK PAGE STYLES
