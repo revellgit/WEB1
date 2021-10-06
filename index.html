@@ -26,24 +26,29 @@
             <div class="line_1"></div>
             <div class="line_2"></div>
         </div>
-        <div class="big_menu"></div>      
+        <div class="big_menu">            
+        </div>      
     </div>
 
     <div class="container_main">
-        <div class="main_content">
+        <!-- <div class="main_content"> -->
 
-            <div class="header">
+            <div class="header_wrapper main_content">
                 <div class="header_content">
-                    <h2>EMPTY SPACE</h2>
+                    <br><br>
+                    <!-- <h2>EMPTY SPACE</h2> -->
                 </div>
-            </div>
+            </div> <!-- end header -->
 
-            <div class="splash_image">
+            <div class="title_wrapper main_content">
                 <div class="title_text">
                     <span>How does your garden</span>
                     <span>grow?</span>
                 </div>
-                <div class="large_image">
+            </div>
+
+            <div class="splash_wrapper">
+                <div class="large_video">
                     <span>Large splash image/video goes here</span>
                     <video width="100%" height="100%" autoplay muted loop>
                         <source src="resources/videos/index_splash.mp4" type="video/mp4">
@@ -52,12 +57,14 @@
                     </video>
                 </div>
             </div>
-
-            <div class="hover_images">ANIMATED SCROLL / HOVER IMAGE BOXES</div>
+        
+            <div class="hover_images main_content">
+                ANIMATED SCROLL / HOVER IMAGE BOXES
+            </div>
             
-        </div>
+        
     </div>
-            <div class="carousel">
+            <div class="carousel_wrapper">
 				<div class="splide">
 					<div class="splide__track">
 						<ul class="splide__list">
@@ -66,49 +73,50 @@
 							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
 						</ul>
 					</div>
-				</div>
-				IMAGE CAROUSEL
+				</div>				
 			</div>
+
 			<script> new Splide( '.splide' ).mount(); </script>
 			
 			<div class="faq_wrapper">
 				<div class="dropdown_faq main_content">
-					<div class="text_1">
+					<div class="faq_question">
 						<span>Line 1</span>
                         <span class="faq_toggle_btn">X</span>
-                        <div class="box_1">
+                        <div class="faq_box">
                             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
                         </div>
 					</div>
-					
-					<div class="text_2">
+
+                    <div class="faq_question">
 						<span>Line 2</span>
                         <span class="faq_toggle_btn">X</span>
-                        <div class="box_1">
+                        <div class="faq_box">
                             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
                         </div>
 					</div>
-					
-					<div class="text_3">
-						<span>Line 1<button id="button_1">X</button></span>
+
+                    <div class="faq_question">
+						<span>Line 3</span>
+                        <span class="faq_toggle_btn">X</span>
+                        <div class="faq_box">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
+                        </div>
 					</div>
-					<div class="box_3">
-						<span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
-					</div>
-					<div class="text_4">
-						<span>Line 2<button id="button_2">X</button></span>
-					</div>
-					<div class="box_4">
-						<span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
-					</div>
+
+                    <div class="faq_question">
+						<span>Line 4</span>
+                        <span class="faq_toggle_btn">X</span>
+                        <div class="faq_box">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
+                        </div>
+					</div>				
 				</div>
-			</div>
+			</div> <!-- end faq_wrapper -->
 			
             <script> burger(); </script>
             <script> opendiv(); </script>
-        
-
-    </div>
+    
 
     <footer>
         <div class="footer_wrapper">
@@ -140,8 +148,7 @@
                     </div>                    
                 </div>
             </div>
-        </div>        
+        </div> <!-- end footer_wrapper -->      
     </footer>
-
 </body>
 </html>

@@ -9,7 +9,7 @@ CSS VARIABLES
 */
 :root
 {
-	--maincolour: grey;
+	--bodycolour: grey;
     --dropdown: darkgrey;
     --footercolour: #333333;
 }
@@ -28,7 +28,7 @@ COMMON STYLES
 
 body
 {
-    background-color: var(--maincolour);
+    background-color: var(--bodycolour);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -80,7 +80,7 @@ body
     top: 0;
     background-color: blueviolet;
     width: 50%;
-    height: 50%;
+    height: 100%;
 }
 
 .menu_open
@@ -96,7 +96,6 @@ body
 .links a
 {
     font-size: 36px;
-
 }
 
 a:link 
@@ -126,17 +125,10 @@ a:active
     transition: 0.4s;
 }
 
-.container_main
-{
-    display: flex;    
-    justify-content: center;
-    background-color: yellow;
-    width: 100vw;
-}
+
 
 footer
-{
-    
+{    
     display: flex;    
     justify-content: center;
     height: 83vh;
@@ -242,21 +234,39 @@ INDEX PAGE STYLES
 -------------------------------------------------------------------------------------------------------
 */
 
+.container_main
+{
+    display: flex;
+    background-color: yellow;
+    width: 100vw;
+    
+}
+
 .main_content
 {
-    width: 50vw;    
+    display: flex;
+    justify-content: center;
+    width: 52%;    
+}
+
+.header_wrapper
+{
+   
+    justify-self: center;
+    
+    height: 25vh;
+    background-color: blue;
+
 }
 
 .header_content
-{
-    display: flex;
-    justify-self: center;    
+{       
     color:white;    
 }
 
-.splash_image
-{
-    height: 100vh;
+.title_wrapper
+{    
+    height: 25vh;    
     background-color: brown;
     color: white;
 }
@@ -276,11 +286,19 @@ INDEX PAGE STYLES
     margin: 0 auto;
 }
 
-.large_image
+.splash_wrapper
 {
-    height: 85%;
+    width: 100vw;
     background-color: burlywood;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;    
+}
+
+.large_video
+{    
+    width: 50%;
+    
+    overflow: hidden;    
 }
 
 .faq_wrapper
@@ -293,15 +311,16 @@ INDEX PAGE STYLES
 {
     height: 150vh;
     background-color: var(--dropdown);
-    color: white;
+    color: grey;
+    font-size: 3em;
 }
 
-.div_open
+.faq_question
 {
-    display: block;
+    background-color: var(--dropdown);
 }
 
-.box_1
+.faq_box
 {
     display: none;
     width: 100%;
@@ -314,13 +333,18 @@ INDEX PAGE STYLES
     display: inline-block;
 }
 
+.div_open
+{
+    display: block;
+}
+
 .hover_images
 {
     height: 200vh;
     background-color: blueviolet;
 }
 
-.carousel
+.carousel_wrapper
 {
     /* z-index: 999; */
     justify-content: normal;
