@@ -299,6 +299,15 @@ INDEX PAGE STYLES
     margin: auto;
 }
 
+/* carousel */
+
+.events_wrapper
+{
+    margin: auto;
+    background-color: white;
+    height: 65vh;
+}
+
 .faq_wrapper
 {
 	display: flex;    
