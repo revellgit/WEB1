@@ -60,7 +60,7 @@ body
 
 .links
 {
-    width: 50%;    
+    width: 75%;    
 }
 
 .nav_burger
@@ -95,7 +95,7 @@ body
 
 .links a
 {
-    font-size: 36px;
+    font-size: 22px;
 }
 
 a:link 
@@ -124,8 +124,6 @@ a:active
     margin: 5px 0;
     transition: 0.4s;
 }
-
-
 
 footer
 {    
@@ -236,27 +234,22 @@ INDEX PAGE STYLES
 
 .container_main
 {
-    display: flex;
+    
     background-color: yellow;
-    width: 100vw;
+    /*width: 100vw;*/
     
 }
 
 .main_content
-{
-    display: flex;
-    justify-content: center;
-    width: 52%;    
+{    
+    width: 54%;    
 }
 
 .header_wrapper
-{
-   
-    justify-self: center;
-    
+{   
+    margin: auto;    
     height: 25vh;
     background-color: blue;
-
 }
 
 .header_content
@@ -265,8 +258,9 @@ INDEX PAGE STYLES
 }
 
 .title_wrapper
-{    
-    height: 25vh;    
+{   
+    margin: auto; 
+    height: 15vh;    
     background-color: brown;
     color: white;
 }
@@ -288,17 +282,20 @@ INDEX PAGE STYLES
 
 .splash_wrapper
 {
-    width: 100vw;
+    width: 73%;
+    margin: auto;
     background-color: burlywood;
-    display: flex;
-    justify-content: center;    
+    
 }
 
 .large_video
 {    
-    width: 50%;
-    
     overflow: hidden;    
+}
+
+.hover_images
+{
+    margin: auto;
 }
 
 .faq_wrapper
