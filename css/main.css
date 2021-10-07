@@ -425,7 +425,7 @@ CLIENTS PAGE STYLES
 .box_item
 {
     min-width: 100px;
-    min-height: 100px;
+    min-height: 200px;
     background-color: chocolate;
 }
 

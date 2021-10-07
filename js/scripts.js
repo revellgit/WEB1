@@ -7,6 +7,31 @@ Multiline comment in js
 
 // Single line comment in js
 
+// JSON
+var clients = 
+   [         
+      {
+         "title": "title1", 
+         "description": "lepros davos etc."
+      },
+      { 
+         "title": "title2", 
+         "description": "lepros davos etc." 
+      },
+      {
+         "title": "title3", 
+         "description": "lepros davos etc."
+      },
+      {
+         "title": "title4", 
+         "description": "lepros davos etc."
+      },
+      {
+         "title": "title5", 
+         "description": "lepros davos etc."
+      } 
+   ]
+
 function donothing() 
 {
    console.log("hello there from js world!");
@@ -49,20 +74,27 @@ function opendiv()
 
 function createboxes()
 {   
-   const box_parent = document.querySelector('.boxes_wrapper');  
-   // box_parent.classList.add('boxes_styles');
+   const box_parent = document.querySelector('.boxes_wrapper');   
+   
+   //clients.forEach(element => console.log(element.title, element.description));
 
-   for(i = 0; i < 56; i++)
-   {      
-      console.log(box_parent);
+   clients.forEach(elem => {     
       const box_item_div = document.createElement('div');
       box_item_div.classList.add('box_item');
 
-      console.log(box_item_div);
-
       box_parent.appendChild(box_item_div);
-   }
+      box_item_div.innerHTML += '<h3>' + elem.title + '</h3>'
+      box_item_div.innerHTML += '<p>' + elem.description + '</p>'
+   })
 
-   
+   /*
+   const all_boxes = document.querySelectorAll('.box_item');
+   console.log(all_boxes);
+
+   all_boxes.forEach((elem) => {
+      console.log(elem);
+      //elem.innerHTML = '<p></p>'
+   })
+   */
 }
 
