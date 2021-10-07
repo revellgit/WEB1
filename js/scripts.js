@@ -32,44 +32,37 @@ function burger()
 
 function opendiv()
 {
-
    const all_btn = document.querySelectorAll(".faq_toggle_btn");
    console.log(all_btn);
 
    all_btn.forEach((item) => {
       item.addEventListener('click', () => {
-   /* console.log(btn);
-
-   btn.addEventListener('click', () => { */
-      /* const box_div = e.target.parentNode.id; */
-      /* console.log(box_div); */
+   
          const next = item.nextElementSibling;
-         console.log(next);
-      /* alert(e.target.parentNode.id); */
+         console.log(next);     
 
          const check = next.classList.toggle('faq_open');
          console.log(check);
       })
-   })
+   })   
+}
 
+function createboxes()
+{   
+   const box_parent = document.querySelector('.boxes_wrapper');  
+   // box_parent.classList.add('boxes_styles');
+
+   for(i = 0; i < 56; i++)
+   {      
+      console.log(box_parent);
+      const box_item_div = document.createElement('div');
+      box_item_div.classList.add('box_item');
+
+      console.log(box_item_div);
+
+      box_parent.appendChild(box_item_div);
+   }
 
    
-
-   /*
-   const div_button = document.querySelector('#button_1');
-   const div_box = document.querySelector('.box_1');
-
-   let div_open = false;
-
-   div_button.addEventListener('click', () => {
-      if(!div_open) {
-         div_box.style.display = 'inline-block';
-         div_open = true;
-      } else {
-         div_box.style.display = 'none';
-         div_open = false;
-      }
-   })
-   */
 }
 
