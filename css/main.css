@@ -26,14 +26,18 @@ COMMON STYLES
     src: url(../resources/fonts/texgyreheros-regular.otf);
 }
 
-body
+*
 {
-    background-color: var(--bodycolour);
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
-	/* font-family: Arial, sans-serif; */
+}
+
+body
+{
+    background-color: var(--bodycolour);    
+    overflow-x: hidden;	
     max-width: 100vw;
     font-family: myFont, Arial, sans-serif;
 }
@@ -394,8 +398,29 @@ CLIENTS PAGE STYLES
 .clients_boxes
 {
     margin: auto;
-    height: 330vh;
+    max-height: 330vh;
     background-color: cadetblue;
+}
+
+.boxes_wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}    
+
+.box_item
+{
+    min-width: 200px;
+    min-height: 200px;
+    background-color: chocolate;
+}
+
+.box_item:nth-child(odd)
+{
+    background-color:darkolivegreen;
 }
 
 .clients_quotes
