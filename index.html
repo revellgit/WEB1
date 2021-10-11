@@ -1,130 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Html comments -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Splide image gallery -->
-	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-	
+
+    <!-- Splide image gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Home</title>
 </head>
+
 <body>
-    <div class="nav_bar">
-        <div class="nav_burger">
-            <div class="line_1"></div>
-            <div class="line_2"></div>
-        </div>                    
-    </div>
-    <div class="big_menu">  
+    <div class="big_menu">
         <div class="links">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="clients.html">CLIENTS</a>
-            <a href="work.html">WORK</a>            
-        </div>               
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="clients.html">Clients</a>
+            <a href="work.html">Work</a>
+        </div>        
     </div>
+
+    <div class="nav_burger">
+        <div class="line_1"></div>
+        <div class="line_2"></div>
+    </div>
+
+
+    
+
 
     <div class="container_main">
         <!-- <div class="main_content"> -->
 
-            <div class="header_wrapper main_content">
-                <div class="header_content">
-                    <br><br>
-                    <!-- <h2>EMPTY SPACE</h2> -->
-                </div>
-            </div> <!-- end header -->
-
-            <div class="title_wrapper main_content">
-                <div class="title_text">
-                    <span>How does your garden</span>
-                    <span>grow?</span>
-                </div>
+        <div class="header_wrapper main_content">
+            <div class="header_content">
+                <br><br>
+                <!-- <h2>EMPTY SPACE</h2> -->
             </div>
+        </div> <!-- end header -->
 
-            <div class="splash_wrapper">
-                <div class="large_video">
-                    <span>Large splash image/video goes here</span>
-                    <video width="100%" height="100%" autoplay muted loop>
-                        <source src="resources/videos/index_splash.mp4" type="video/mp4">
-                        <!-- <source src="movie.ogg" type="video/ogg"> -->
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+        <div class="title_wrapper main_content">
+            <div class="title_text">
+                <span>How does your garden</span>
+                <span>grow?</span>
             </div>
-        
-            <div class="hover_images main_content">
-                ANIMATED SCROLL / HOVER IMAGE BOXES
-            </div>      
-        
+        </div>
+
+        <div class="splash_wrapper">
+            <div class="large_video">
+                <span>Large splash image/video goes here</span>
+                <video width="100%" height="100%" autoplay muted loop>
+                    <source src="resources/videos/index_splash.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="hover_images main_content">
+            ANIMATED SCROLL / HOVER IMAGE BOXES
+        </div>
+
     </div>
 
-            <div class="carousel_wrapper">
-				<div class="splide">
-					<div class="splide__track">
-						<ul class="splide__list">
-							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
-							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
-							<li class="splide__slide"><img src="resources/carousel_image1.jpg"/></li>
-						</ul>
-					</div>
-				</div>				
-			</div>
+    <div class="carousel_wrapper">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="resources/carousel_image1.jpg" /></li>
+                    <li class="splide__slide"><img src="resources/carousel_image1.jpg" /></li>
+                    <li class="splide__slide"><img src="resources/carousel_image1.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-			<script> new Splide( '.splide' ).mount(); </script>
+    <script> new Splide('.splide').mount();</script>
 
-            <div class="events_wrapper main_content">
-                <div class="events_list">
-                    Events
+    <div class="events_wrapper main_content">
+        <div class="events_list">
+            Events
+        </div>
+    </div>
+
+    <div class="faq_wrapper">
+        <div class="dropdown_faq main_content">
+            <h3>FAQ</h3>
+            <div class="faq_question">
+                <span>Line 1</span>
+                <span class="faq_toggle_btn">X</span>
+                <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
                 </div>
             </div>
-			
-			<div class="faq_wrapper">
-				<div class="dropdown_faq main_content">
-                    <h3>FAQ</h3>
-					<div class="faq_question">
-						<span>Line 1</span>
-                        <span class="faq_toggle_btn">X</span>
-                        <div class="faq_box">
-                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
-                        </div>
-					</div>
 
-                    <div class="faq_question">
-						<span>Line 2</span>
-                        <span class="faq_toggle_btn">X</span>
-                        <div class="faq_box">
-                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
-                        </div>
-					</div>
+            <div class="faq_question">
+                <span>Line 2</span>
+                <span class="faq_toggle_btn">X</span>
+                <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                </div>
+            </div>
 
-                    <div class="faq_question">
-						<span>Line 3</span>
-                        <span class="faq_toggle_btn">X</span>
-                        <div class="faq_box">
-                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
-                        </div>
-					</div>
+            <div class="faq_question">
+                <span>Line 3</span>
+                <span class="faq_toggle_btn">X</span>
+                <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                </div>
+            </div>
 
-                    <div class="faq_question">
-						<span>Line 4</span>
-                        <span class="faq_toggle_btn">X</span>
-                        <div class="faq_box">
-                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam numquam facere qui! Assumenda.</span>
-                        </div>
-					</div>				
-				</div>
-			</div> <!-- end faq_wrapper -->
-			
-            <script> burger(); </script>
-            <script> opendiv(); </script>
+            <div class="faq_question">
+                <span>Line 4</span>
+                <span class="faq_toggle_btn">X</span>
+                <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end faq_wrapper -->
 
-    
+    <script> burger();</script>
+    <script> opendiv();</script>
+
+
 
     <footer>
         <div class="footer_wrapper main_content">
@@ -133,7 +146,8 @@
                     <span class="animate_underline">Let's Talk</span>
                 </div>
                 <div class="footer_email">
-                    <a href="mailto:mrmattrevell@gmail.com" class="animate_underline" style="z-index: 2">mrmattrevell@gmail.co.nz</a>
+                    <a href="mailto:mrmattrevell@gmail.com" class="animate_underline"
+                        style="z-index: 2">mrmattrevell@gmail.co.nz</a>
                 </div>
             </div>
 
@@ -150,13 +164,15 @@
                         <a href="work.html">WORK</a>
                     </div>
                     <div class="external_links">
-                        <a href="https://www.facebook.com/" class="animate_underline" style="z-index: 2" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/" class="animate_underline" style="z-index: 2"
+                            target="_blank">Facebook</a>
                         <a href="https://www.pinterest.nz/" target="_blank">Pinterest</a>
                         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    </div>                    
+                    </div>
                 </div>
             </div>
-        </div> <!-- end footer_wrapper -->      
+        </div> <!-- end footer_wrapper -->
     </footer>
 </body>
+
 </html>

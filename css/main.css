@@ -53,7 +53,7 @@ body
 {  
     /* display: flex; */
     position: fixed;
-    z-index: 99;
+    z-index: 30;
     margin: 0;    
     top: 8%;
     left: 50%;
@@ -65,52 +65,56 @@ body
 
 .links
 {
-    display: inline-block;  
+    display: inline-block;
+    position: absolute;
+    top: 48px;
+    left: 56px;    
 }
 
 .links a
-{
+{    
+    /* z-index: 40; */
     display: block;
-    font-size: 22px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .nav_burger
-{  
-    position: absolute;    
-    cursor: pointer;    
-    top: 8px;
-    right: 0;
-    width: 2%;
-    height: 100%;
+{      
+    position: fixed;    
+    cursor: pointer;
+    z-index: 40; 
+    top: 68px;
+    right: 412px;    
 }
 
 .line_1, .line_2
 {
-    z-index: 99;
-    width: 100%;
+    /* position: absolute; */
+    width: 24px;
     height: 2px;
     background-color: #333;
-    margin: 5px 0;
+    margin: 6px 0;
     transition: 0.4s;
 }
 
 .big_menu
 {
-    display: none;  
+    /* display: none; */
     /* position: absolute; */
     position: fixed;
-    z-index: 1;
-    background-color: blueviolet;
-    top: 25px;
+    z-index: -1;
+    background-color: rgb(43, 137, 226);
+    top: 26px;
     right: 354px;    
     width: 23%;
     height: 43%;
     opacity: 0;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;    
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;    
 }
 
 .menu_open
@@ -118,6 +122,7 @@ body
     display: block;
     opacity: 1.0;
     top: 12px;
+    z-index: 40;
 }
 
 a:link 
