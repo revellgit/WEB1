@@ -375,6 +375,60 @@ ABOUT PAGE STYLES
 -------------------------------------------------------------------------------------------------------
 */
 
+.about_header
+{
+    height: 33vh;
+    background-color: aqua;
+}
+
+.about_title
+{
+    margin: auto;
+    height: 52vh;
+    background-color:lightblue;
+}
+
+.about_wedo
+{
+    margin: auto;
+    height: 340vh;
+    background-color:lightgoldenrodyellow;
+}
+
+.about_skills
+{
+    margin: auto;
+    height: 95vh;
+    background-color:lightgreen;
+}
+
+.about_logos
+{
+    margin: auto;
+    height: 105vh;
+    background-color:cadetblue; 
+}
+
+.about_quotes
+{
+    margin: auto;
+    height: 50vh;
+    background-color:darkcyan;
+}
+
+.about_awards
+{
+    margin: auto;
+    height: 45vh;
+    background-color:darkorange;
+}
+
+.about_carousel
+{
+    margin: auto;
+    height: 50vh;
+    background-color:darkslateblue;
+}
 
 /*
 -------------------------------------------------------------------------------------------------------
@@ -446,6 +500,49 @@ CLIENTS PAGE STYLES
 WORK PAGE STYLES
 -------------------------------------------------------------------------------------------------------
 */
+
+.work_header
+{
+    height: 25vh;
+    background-color: aqua;
+}
+
+.work_title
+{
+    margin: auto;
+    background-color: azure;
+    height: 10vh;
+}
+
+.work_projects
+{
+    margin: auto;
+    background-color:cornflowerblue;
+    height: 425vh;
+}
+
+.work_video
+{
+    margin: auto;
+    background-color: azure;
+    height: 61vh;
+    overflow: hidden;
+}
+
+.work_list
+{
+    margin: auto;
+    background-color:lightblue;
+    height: 220vh;
+}
+
+.work_logos
+{
+    margin: auto;
+    background-color: black;
+    height: 105vh;
+    color: white;
+}
 
 
 /*
