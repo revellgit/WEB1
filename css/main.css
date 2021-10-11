@@ -51,55 +51,73 @@ body
 
 .nav_bar
 {  
-    display: flex;
+    /* display: flex; */
     position: fixed;
+    z-index: 99;
     margin: 0;    
     top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 58%;
     height: 7vh;
-    background-color: rgba(255, 255, 255, 0.2);    
+    background-color: rgba(255, 255, 255, 0.1);    
 }
 
 .links
 {
-    width: 75%;    
+    display: inline-block;  
+}
+
+.links a
+{
+    display: block;
+    font-size: 22px;
 }
 
 .nav_burger
 {  
-    cursor: pointer;
-    /* margin-left: auto; */
-    float: right;
-    margin-top: 2vh;  
+    position: absolute;    
+    cursor: pointer;    
+    top: 8px;
+    right: 0;
     width: 2%;
     height: 100%;
 }
 
+.line_1, .line_2
+{
+    z-index: 99;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
 .big_menu
 {
-    display: none;
-    position: absolute;
-    top: 0;
+    display: none;  
+    /* position: absolute; */
+    position: fixed;
+    z-index: 1;
     background-color: blueviolet;
-    width: 50%;
-    height: 100%;
+    top: 25px;
+    right: 354px;    
+    width: 23%;
+    height: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;    
 }
 
 .menu_open
 {
     display: block;
-}
-
-.menu_closed
-{
-    display: none;
-}
-
-.links a
-{
-    font-size: 22px;
+    opacity: 1.0;
+    top: 12px;
 }
 
 a:link 
@@ -118,15 +136,6 @@ a:active
 {
     text-decoration: underline;
     color: white;
-}
-
-.line_1, .line_2
-{
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: 0.4s;
 }
 
 footer
@@ -213,7 +222,7 @@ footer span
 
 .animate_underline::before
 {
-	content: "";
+	content: '';
     z-index: -1;	
 	position: absolute;
 	width: 100%;

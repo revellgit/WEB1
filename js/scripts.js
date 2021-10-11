@@ -47,9 +47,11 @@ function burger()
    menu_button.addEventListener('click', () => {
       if(!menu_open) {
          nav_menu.classList.add('menu_open');
+         //nav_menu.classList.add('active');
          menu_open = true;
       } else {
          nav_menu.classList.remove('menu_open');
+         //nav_menu.classList.remove('active');
          menu_open = false;
       }
    })
