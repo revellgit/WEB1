@@ -254,8 +254,7 @@ INDEX PAGE STYLES
 {
     
     background-color: yellow;
-    /*width: 100vw;*/
-    
+    /*width: 100vw;*/    
 }
 
 .main_content
@@ -314,8 +313,53 @@ INDEX PAGE STYLES
 
 .hover_images
 {
+    height: 200vh;
     margin: auto;
+    display: flex;
+    /* flex-direction: column;*/
+    background-color: darkcyan;
 }
+
+.hover_left
+{
+    width: 50%;
+    height: 100%;
+    background-color: chartreuse;
+}
+
+.hover_right
+{
+    width: 50%;
+    height: 100%;
+    background-color: darkblue;    
+}
+
+.hover_box
+{
+    overflow: hidden;
+    margin-top: 20px;
+    /* background-color: darkgoldenrod; */
+}
+
+/*
+.hover_images .hover_left .hover_box, .hover_right .hover_box
+{
+    filter: grayscale(1);
+}
+*/
+.hover_box video
+{
+    filter: grayscale(1);
+}
+
+
+.hover_box video:hover
+{
+    filter: grayscale(0);
+    /* Need to find a good custom cursor icon */
+    /* cursor: url('../resources/custom.svg'), pointer; */
+}
+
 
 /* carousel */
 
@@ -365,12 +409,6 @@ INDEX PAGE STYLES
 .div_open
 {
     display: block;
-}
-
-.hover_images
-{
-    height: 200vh;
-    background-color: blueviolet;
 }
 
 .carousel_wrapper

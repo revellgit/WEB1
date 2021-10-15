@@ -100,3 +100,15 @@ function createboxes()
    */
 }
 
+function pausePlay()
+{
+   const clip = document.querySelectorAll('.clip');
+   clip.forEach(elem => {
+      elem.addEventListener('mouseenter', () => {
+         elem.play();
+      })
+      elem.addEventListener('mouseout', () => {
+         elem.pause();
+      })
+   })
+}
