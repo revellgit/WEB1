@@ -349,7 +349,7 @@ INDEX PAGE STYLES
 */
 .hover_box video
 {
-    filter: grayscale(1);
+    filter: grayscale(80%);
 }
 
 
