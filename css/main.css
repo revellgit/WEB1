@@ -357,7 +357,7 @@ INDEX PAGE STYLES
 {
     filter: grayscale(0);
     /* Need to find a good custom cursor icon */
-    /* cursor: url('../resources/custom.svg'), pointer; */
+    cursor: url('../resources/custom.svg'), pointer;
 }
 
 
