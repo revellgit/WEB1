@@ -37,6 +37,19 @@ function donothing()
    console.log("hello there from js world!");
 }
 
+document.onclick = function(e) {
+   console.log(e.target.className);
+   console.log('');
+   
+   if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger' && e.target.className !== 'line_1' && e.target.className !== 'line_2')
+   {
+      console.log('hello');
+      const nav_menu = document.querySelector('.big_menu');
+      nav_menu.classList.remove('menu_open')
+   }
+   
+}
+
 function burger()
 {
    const menu_button = document.querySelector('.nav_burger');
@@ -45,6 +58,12 @@ function burger()
    let menu_open = false;
 
    menu_button.addEventListener('click', () => {
+
+      nav_menu.classList.toggle('menu_open');
+      console.log('toggle');
+      /*
+
+      
       if(!menu_open) {
          nav_menu.classList.add('menu_open');
          //nav_menu.classList.add('active');
@@ -53,8 +72,9 @@ function burger()
          nav_menu.classList.remove('menu_open');
          //nav_menu.classList.remove('active');
          menu_open = false;
-      }
-   })
+         */
+      })
+   
 }
 
 function opendiv()
