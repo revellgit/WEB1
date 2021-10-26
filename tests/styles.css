@@ -98,3 +98,17 @@ body
 	height: 50%;
 	background-color: yellow;
 }
+
+.fa-arrow-down
+{
+	
+	color: black;
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+.fa-arrow-down.open{
+	color: black;
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}

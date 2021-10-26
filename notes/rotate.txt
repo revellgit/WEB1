@@ -1,0 +1,29 @@
+<div id="container">
+    <i id="icon" class="fa fa-arrow-down"></i>
+</div>
+
+.fa-arrow-down{
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+.fa-arrow-down.open{
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}
+
+(function(document){
+  var div = document.getElementById('container');
+  var icon = document.getElementById('icon');
+  var open = false;
+
+  div.addEventListener('click', function(){
+    if(open){
+      icon.className = 'fa fa-arrow-down';  
+    } else{
+      icon.className = 'fa fa-arrow-down open';
+    }
+
+    open = !open;
+  });
+})(document);
