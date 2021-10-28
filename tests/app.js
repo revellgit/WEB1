@@ -1,6 +1,13 @@
   console.log('hello');
-  
-  
+function start()
+{ 
+	var elem = document.querySelector('.main-carousel');
+	var flkty = new Flickity( elem, {
+	  // options
+	  cellAlign: 'left',
+	  contain: true
+	});
+} 
 
   function arrow()
   {
@@ -13,3 +20,5 @@
 		icon.classList.toggle('open')
 	  })
   }
+  
+ 
