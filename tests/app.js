@@ -1,4 +1,5 @@
-  console.log('hello');
+console.log('hello');
+
 function start()
 { 
 	var elem = document.querySelector('.main-carousel');
