@@ -8,6 +8,15 @@ Multiline comment in js
 // Single line comment in js
 
 // JSON
+
+var quotes =
+   [
+      {
+         "quote_text" : "If you have a garden in your library, everything will be complete.",
+         "author" : "Marcus Tullius Cicero, Letter to Varro, 1st century AD"
+      }
+   ]
+   
 var clients = 
    [         
       {
