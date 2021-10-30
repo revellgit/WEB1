@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Html comments -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Flickity -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>About</title>
@@ -55,7 +65,18 @@
     </div>
 
     <div class="about_carousel">
-        carousel from index
+        <div class="carousel_wrapper">
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "wrapAround": "true"}'>
+                <div class="carousel-cell"><img src="resources/flowers1.png"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers2.jpg"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers3.jpg"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers1.png"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers2.jpg"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers3.jpg"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers1.png"></img></div>
+                <div class="carousel-cell"><img src="resources/flowers2.jpg"></img></div>
+              </div>	
+        </div>
     </div>
 
     <footer>

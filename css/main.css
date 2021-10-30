@@ -251,16 +251,16 @@ footer span
     /* z-index: 999; */
     justify-content: normal;
     width: 100vw;
-    height: 25vh;
+    height: 50vh;
     background-color: aqua;
 	overflow: hidden;
 }
 
 .carousel-cell 
 {
-    width: 33%; /* half-width */
-    height: 200px;
-    margin-right: 20px;
+    width: 25%; /* half-width */
+    height: 50vh;
+    margin-right: 90px;
 }
   
 .carousel-cell img
