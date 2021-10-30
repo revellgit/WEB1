@@ -416,8 +416,7 @@ INDEX PAGE STYLES
 
 .faq_question
 {
-    background-color: var(--dropdown);
-    
+    background-color: var(--dropdown);    
 }
 
 .faq_box
@@ -439,6 +438,19 @@ INDEX PAGE STYLES
 .div_open
 {
     display: block;
+}
+
+.fa-arrow-down
+{
+  color: grey;
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+.fa-arrow-down.open{
+  color: grey;
+  transform: rotate(180deg);
+  transition: transform 1s linear;
 }
 
 /*
