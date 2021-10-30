@@ -79,6 +79,7 @@ function burger()
 
 function opendiv()
 {
+   var icon = document.querySelector('#icon');
    const all_btn = document.querySelectorAll(".faq_toggle_btn");
    console.log(all_btn);
 
@@ -89,6 +90,7 @@ function opendiv()
          console.log(next);     
 
          const check = next.classList.toggle('faq_open');
+         icon.classList.toggle('open')
          console.log(check);
       })
    })   
