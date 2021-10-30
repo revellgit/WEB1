@@ -11,9 +11,9 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Splide image gallery -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- Flickity -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -106,18 +106,17 @@
     </div><!-- end container_main -->
 
     <div class="carousel_wrapper">
-        <div class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="resources/carousel_image1.jpg" /></li>
-                    <li class="splide__slide"><img src="resources/carousel_image1.jpg" /></li>
-                    <li class="splide__slide"><img src="resources/carousel_image1.jpg" /></li>
-                </ul>
-            </div>
-        </div>
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "wrapAround": "true"}'>
+            <div class="carousel-cell"><img src="resources/flowers1.png"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers2.jpg"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers3.jpg"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers1.png"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers2.jpg"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers3.jpg"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers1.png"></img></div>
+            <div class="carousel-cell"><img src="resources/flowers2.jpg"></img></div>
+          </div>	
     </div>
-
-    <script> new Splide('.splide').mount();</script>
 
     <div class="events_wrapper main_content">
         <div class="events_list">
