@@ -347,7 +347,7 @@ INDEX PAGE STYLES
 
 .hover_images
 {
-    height: 200vh;
+    height: 250vh;
     margin: auto;
     display: flex;
     /* flex-direction: column;*/
@@ -389,8 +389,41 @@ INDEX PAGE STYLES
 .hover_box video:hover
 {
     filter: grayscale(0);
+    transform: scale(1.5);
     /* Need to find a good custom cursor icon */
     cursor: url('../resources/custom.svg'), pointer;
+}
+
+#video_1
+{
+    background-color: blueviolet;
+    width: 435px;
+    height: 580px;
+    overflow: hidden;
+    display: block;
+}
+
+#video_2
+{
+    background-color: blueviolet;
+    width: 435px;
+    height: 435px;
+    margin-top: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+.history_wrapper
+{
+    background-color: grey;
+    height: 50vh;
+}
+
+.history
+{
+    background-color: lightgrey;
+    margin: auto;
+    height: 100%;
 }
 
 .events_wrapper
