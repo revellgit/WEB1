@@ -52,7 +52,7 @@ document.onclick = function(e) {
    
    if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger' && e.target.className !== 'line_1' && e.target.className !== 'line_2')
    {
-      console.log('hello');
+      //console.log('hello');
       const nav_menu = document.querySelector('.big_menu');
       nav_menu.classList.remove('menu_open')
    }
@@ -70,47 +70,39 @@ function burger()
 
       nav_menu.classList.toggle('menu_open');
       console.log('toggle');
-      /*
-
-      
-      if(!menu_open) {
-         nav_menu.classList.add('menu_open');
-         //nav_menu.classList.add('active');
-         menu_open = true;
-      } else {
-         nav_menu.classList.remove('menu_open');
-         //nav_menu.classList.remove('active');
-         menu_open = false;
-         */
+     
       })
    
 }
 
 function opendiv()
 {
-   var icon = document.querySelector('#icon');
-   const all_btn = document.querySelectorAll(".faq_toggle_btn");
+   //var icon = document.querySelectorAll('.icon');
+   const all_btn = document.querySelectorAll(".question_text");
    console.log(all_btn);
+   //console.log(icon);
 
    all_btn.forEach((item) => {
-      item.addEventListener('click', () => {
+      item.addEventListener('click', (e) => {
    
-         const next = item.nextElementSibling;
-         console.log(next);     
-
+         console.log("Item");     
+         console.log(item);
+         const next = item.nextElementSibling; // faq_box
+         const ch = item.children[1];
+         console.log("Children");
+         console.log(ch);
+         
          const check = next.classList.toggle('faq_open');
-         icon.classList.toggle('open')
          console.log(check);
+         item.children[1].classList.toggle('open');         
       })
-   })   
+   })
 }
 
 function createboxes()
 {   
    const box_parent = document.querySelector('.boxes_wrapper');   
    
-   //clients.forEach(element => console.log(element.title, element.description));
-
    clients.forEach(elem => {     
       const box_item_div = document.createElement('div');
       box_item_div.classList.add('box_item');
@@ -120,15 +112,6 @@ function createboxes()
       box_item_div.innerHTML += '<p>' + elem.description + '</p>'
    })
 
-   /*
-   const all_boxes = document.querySelectorAll('.box_item');
-   console.log(all_boxes);
-
-   all_boxes.forEach((elem) => {
-      console.log(elem);
-      //elem.innerHTML = '<p></p>'
-   })
-   */
 }
 
 function pausePlay()

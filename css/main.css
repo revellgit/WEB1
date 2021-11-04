@@ -419,6 +419,21 @@ INDEX PAGE STYLES
     background-color: var(--dropdown);    
 }
 
+.question_text
+{
+	color: white;
+	font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.6px;
+	transition: 1.0s;
+}
+
+.question_text:hover
+{
+    color: grey;
+	cursor: pointer;	
+}
+
 .faq_box
 {
     display: none;
@@ -444,13 +459,13 @@ INDEX PAGE STYLES
 {
   color: grey;
   transform: rotate(0deg);
-  transition: transform 1s linear;
+  transition: transform 0.125s linear;
 }
 
 .fa-arrow-down.open{
   color: grey;
   transform: rotate(180deg);
-  transition: transform 1s linear;
+  transition: transform 0.125s linear;
 }
 
 /*
