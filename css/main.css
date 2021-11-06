@@ -683,4 +683,15 @@ RESPONSIVE SECTION - MEDIA QUERIES
 -------------------------------------------------------------------------------------------------------
 */
 
-/* @media */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+	body
+	{
+			background-color: blue;
+			display: none;
+	}
+	
+}
+
+
