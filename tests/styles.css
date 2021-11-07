@@ -131,3 +131,10 @@ body
 .flickity-button {
   background: transparent;
 }
+
+.quotes
+{
+	background-color: grey;
+	color: white;
+	height: 25vh;
+}
