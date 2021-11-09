@@ -422,10 +422,10 @@ INDEX PAGE STYLES
 
 .question_text {
   color: white;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: -0.6px;
-  transition: 1s;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: -1px;
+  transition: 0.67s;
 }
 
 .question_text:hover {
@@ -452,6 +452,7 @@ INDEX PAGE STYLES
 }
 
 .fa-arrow-down {
+  font-size: 17px;
   color: grey;
   transform: rotate(0deg);
   transition: transform 0.125s linear;
