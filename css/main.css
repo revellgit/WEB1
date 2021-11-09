@@ -7,6 +7,7 @@ Main CSS file (main.css)
 CSS VARIABLES
 -------------------------------------------------------------------------------------------------------
 */
+
 :root
 {
 	--bodycolour: grey;
@@ -252,7 +253,7 @@ footer span
     justify-content: normal;
     width: 100vw;
     height: 50vh;
-    background-color: aqua;
+    background-color: white;
 	overflow: hidden;
 }
 
@@ -265,8 +266,9 @@ footer span
   
 .carousel-cell img
 {
-      width: 100%;
-      height: 100%;
+    
+    max-width: 100%;
+    max-height: 100%;
 }
   
 .flickity-page-dots 
@@ -372,6 +374,9 @@ INDEX PAGE STYLES
 {
     overflow: hidden;
     margin-top: 20px;
+    margin-left: 40px;
+    transform-origin: center;
+    transition: transform 0.25s;
     /* background-color: darkgoldenrod; */
 }
 
@@ -382,14 +387,14 @@ INDEX PAGE STYLES
 }
 */
 .hover_box video
-{
-    filter: grayscale(80%);
+{    
+    filter: grayscale(30%);
 }
 
-.hover_box video:hover
+.hover_box:hover
 {
-    filter: grayscale(0);
-    transform: scale(1.5);
+    filter: grayscale(0);    
+    transform: scale(1.025);
     /* Need to find a good custom cursor icon */
     cursor: url('../resources/custom.svg'), pointer;
 }
