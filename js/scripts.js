@@ -69,8 +69,7 @@ function burger()
    menu_button.addEventListener('click', () => {
 
       nav_menu.classList.toggle('menu_open');
-      console.log('toggle');
-     
+      console.log('toggle');     
       })
    
 }

@@ -451,14 +451,14 @@ INDEX PAGE STYLES
   display: block;
 }
 
-.fa-arrow-down {
-  font-size: 17px;
+.fa-angle-down {
+  font-size: 24px;
   color: grey;
   transform: rotate(0deg);
   transition: transform 0.125s linear;
 }
 
-.fa-arrow-down.open {
+.fa-angle-down.open {
   color: grey;
   transform: rotate(180deg);
   transition: transform 0.125s linear;
