@@ -482,7 +482,7 @@ INDEX PAGE STYLES
 
 .dropdown_faq {
   margin: auto;
-  min-height: 150vh;
+  min-height: 165vh;
   background-color: var(--dropdown);
   color: white;
   font-size: 2em;
