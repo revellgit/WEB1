@@ -79,6 +79,7 @@ body {
   z-index: 40;
   top: 50px;
   left: 366px;
+  filter: invert(100%);
 }
 
 .nav_logo i {
@@ -346,7 +347,7 @@ INDEX PAGE STYLES
 
 .title_wrapper {
   margin: auto;
-  height: 32vh;
+  height: 33vh;
   background-color: var(--whitecolour);
   color: white;
 }
@@ -368,7 +369,7 @@ INDEX PAGE STYLES
   width: 71%;
   height: 81vh;
   margin: auto;
-  background-color: white;
+  background-color: var(--whitecolour);
   overflow: hidden;
   filter: saturate(50%);
   transform-origin: center;
@@ -376,8 +377,7 @@ INDEX PAGE STYLES
 }
 
 .large_video {
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 
 .splash_wrapper:hover {
