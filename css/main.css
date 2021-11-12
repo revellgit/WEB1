@@ -11,7 +11,8 @@ CSS VARIABLES
 :root {
   --bodycolour: white;
   --dropdown: black;
-  --footercolour: #333333;
+  --footercolour: #212129;
+  --whitecolour: #ebebeb;
 }
 
 /*
@@ -33,7 +34,7 @@ COMMON STYLES
 }
 
 body {
-  background-color: var(--bodycolour);
+  background-color: var(--whitecolour);
   overflow-x: hidden;
   max-width: 100vw;
   font-family: myFont, Arial, sans-serif;
@@ -72,7 +73,7 @@ body {
   margin-bottom: 20px;
 }
 
-.logo {
+.nav_logo {
   position: fixed;
   cursor: pointer;  
   z-index: 40;
@@ -80,7 +81,7 @@ body {
   left: 366px;
 }
 
-.logo i {
+.nav_logo i {
   font-size: 64px;
   color: black;
 }
@@ -160,16 +161,36 @@ footer span {
 .footer_wrapper {
   width: 80vw;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer_content {
+  width: 100%;
+  height: 73%;
 }
 
 .footer_top {
-  height: 50%;
+  height: 80%;
 }
 
 .footer_caption {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  line-height: 1.333;
+  position: relative;
+}
+
+.footer_logo {
+  position: absolute;
+  top: 16px;
+  right: 203px;
+}
+
+.footer_logo i {
+  font-size: 156px;
+  color: cyan;
 }
 
 .footer_email {
@@ -179,12 +200,14 @@ footer span {
 
 .footer_bottom {
   display: flex;
-  height: 50%;
+  height: 20%;
 }
 
 .footer_address {
-  width: 50%;
-  font-size: 18px;
+  width: 57%;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
 }
 
 .footer_address span {
@@ -192,21 +215,29 @@ footer span {
 }
 
 .footer_links {
-  width: 50%;
+  width: 43%;
   display: flex;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .internal_links {
   width: 50%;
   height: 100%;
-  display: grid;
+  /* display: grid; */
+}
+
+.internal_links ul, .external_links ul {
+  list-style-type: none;
+}
+
+.internal_links ul li, .external_links ul li {
+  margin-bottom: 17px;
 }
 
 .external_links {
   width: 50%;
   height: 100%;
-  display: grid;
+  /* display: grid; */
 }
 
 .animate_underline {
@@ -218,13 +249,14 @@ footer span {
   content: "";
   z-index: -1;
   position: absolute;
-  width: 100%;
-  bottom: -3px;
-  height: 2px;
+  width: 109%;
+  left: -2%;
+  bottom: -2px;
+  height: 1px;
   background-image: linear-gradient(
     to right,
-    rgba(204, 43, 94, 1),
-    rgba(117, 58, 136, 1)
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.25)
   );
   transform-origin: bottom;
   transition: height 0.3s;
@@ -232,7 +264,12 @@ footer span {
 
 .animate_underline:hover::before {
   cursor: pointer;
-  height: 20px;
+  height: 45%;
+  background-image: linear-gradient(
+    to right,
+    rgba(204, 43, 94, 1),
+    rgba(117, 58, 136, 1)
+  );
 }
 
 /* Carousel styles */
@@ -242,7 +279,7 @@ footer span {
   justify-content: normal;
   width: 100vw;
   height: 50vh;
-  background-color: white;
+  background-color: var(--whitecolour);
   overflow: hidden;
 }
 
@@ -289,7 +326,7 @@ INDEX PAGE STYLES
 */
 
 .container_main {
-  background-color: var(--bodycolour);
+  background-color: var(--whitecolour);
   /*width: 100vw;*/
 }
 
@@ -300,7 +337,7 @@ INDEX PAGE STYLES
 .header_wrapper {
   margin: auto;
   height: 37vh;
-  background-color: var(--bodycolour);
+  background-color: var(--whitecolour);
 }
 
 .header_content {
@@ -310,7 +347,7 @@ INDEX PAGE STYLES
 .title_wrapper {
   margin: auto;
   height: 32vh;
-  background-color: brown;
+  background-color: var(--whitecolour);
   color: white;
 }
 
