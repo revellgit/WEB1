@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Html comments -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Clients</title>
 </head>
+
 <body>
-    <div class="nav_bar">
+    <div class="nav_logo">
+        <a href="index.html"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="big_menu">
         <div class="links">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="clients.html">CLIENTS</a>
-            <a href="work.html">WORK</a>
+            <a href="about.html">About</a>
+            <a href="clients.html">Clients</a>
+            <a href="work.html">Work</a>
         </div>
-        <div class="nav_burger">
-            <div class="line_1"></div>
-            <div class="line_2"></div>
-        </div>
-        <div class="big_menu">            
-        </div>      
+    </div>
+
+    <div class="nav_burger">
+        <div class="line_1"></div>
+        <div class="line_2"></div>
     </div>
 
     <div class="clients_header">
@@ -38,43 +55,65 @@
         <div class="boxes_wrapper"></div>
     </div><!-- end clients_boxes -->
 
-    <script> createboxes(); </script>
-    
-    <div class="clients_quotes main_content">
-        Quotes
-    </div><!-- end clients_quotes -->
-    
+    <script> createboxes();</script>
+
+    <div class="quotes_wrapper">
+        <div class="clients_quotes main_content">
+            <div class="a_quote">
+                <div class="quote_text">
+                    <span>quote text</span>
+                </div>
+                <div class="quote_author">
+                    <span>quote author</span>
+                </div>
+            </div>
+        </div><!-- end clients_quotes -->
+    </div>
+
     <footer>
         <div class="footer_wrapper main_content">
-            <div class="footer_top">
-                <div class="footer_caption">
-                    <span class="animate_underline">Let's Talk</span>
-                </div>
-                <div class="footer_email">
-                    <a href="mailto:mrmattrevell@gmail.com" class="animate_underline" style="z-index: 2">mrmattrevell@gmail.co.nz</a>
-                </div>
-            </div>
-
-            <div class="footer_bottom">
-                <div class="footer_address">
-                    <span class="animate_underline">Dunedin</span>
-                    <span>New Zealand</span>
-                </div>
-                <div class="footer_links">
-                    <div class="internal_links">
-                        <a href="index.html">HOME</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="clients.html">CLIENTS</a>
-                        <a href="work.html">WORK</a>
+            <div class="footer_content">
+                <div class="footer_top">
+                    <div class="footer_caption">
+                        <span>Plant a seed.</span>
+                        <div class="footer_logo">
+                            <i class="fa fa-medium" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <div class="external_links">
-                        <a href="https://www.facebook.com/" class="animate_underline" style="z-index: 2" target="_blank">Facebook</a>
-                        <a href="https://www.pinterest.nz/" target="_blank">Pinterest</a>
-                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    </div>                    
+                    <div class="footer_email">
+                        <a href="mailto:mrmattrevell@gmail.com" class="animate_underline"
+                            style="z-index: 2">mrmattrevell@gmail.com</a>
+                    </div>
                 </div>
-            </div>
-        </div> <!-- end footer_wrapper -->      
+
+                <div class="footer_bottom">
+                    <div class="footer_address">
+                        <span>Dunedin</span>
+                        <span>New Zealand</span>
+                    </div>
+                    <div class="footer_links">
+                        <div class="internal_links">
+                            <ul>
+                                <li><a href="clients.html" class="animate_underline" style="z-index: 2">Clients</a></li>
+                                <li><a href="work.html" class="animate_underline" style="z-index: 2">Work</a></li>
+                                <li><a href="about.html" class="animate_underline" style="z-index: 2">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="external_links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/" class="animate_underline" style="z-index: 2"
+                                        target="_blank">Facebook</a></li>
+                                <li><a href="https://www.pinterest.nz/" class="animate_underline" style="z-index: 2"
+                                        target="_blank">Pinterest</a></li>
+                                <li><a href="https://www.instagram.com/" class="animate_underline" style="z-index: 2"
+                                        target="_blank">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end footer_content -->
+        </div> <!-- end footer_wrapper -->
     </footer>
 </body>
+
 </html>

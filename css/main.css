@@ -639,12 +639,34 @@ CLIENTS PAGE STYLES
   background-color: darkolivegreen;
 }
 
+.quotes_wrapper {
+  height: 61vh;
+  background-color: black;
+}
+
 .clients_quotes {
   margin: auto;
-  height: 62vh;
-  background-color: black;
+  height: 100%;
   color: white;
+  display: flex;
+  align-items: center;
 }
+
+.a_quote {
+  
+  height: 50%;
+  width: 50%;
+  background-color: lightgray;
+}
+
+.quote_text {
+  height: 50%;
+}
+
+.quote_author {
+  height: 50%;
+}
+
 /*
 -------------------------------------------------------------------------------------------------------
 WORK PAGE STYLES
