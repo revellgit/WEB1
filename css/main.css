@@ -9,7 +9,7 @@ CSS VARIABLES
 */
 
 :root {
-  --bodycolour: grey;
+  --bodycolour: white;
   --dropdown: black;
   --footercolour: #333333;
 }
@@ -91,6 +91,8 @@ body {
   z-index: 40;
   top: 68px;
   right: 412px;
+  /* mix-blend-mode: multiply; */
+  filter: invert(100%);
 }
 
 .line_1,
@@ -287,7 +289,7 @@ INDEX PAGE STYLES
 */
 
 .container_main {
-  background-color: lightgray;
+  background-color: var(--bodycolour);
   /*width: 100vw;*/
 }
 
@@ -436,11 +438,13 @@ INDEX PAGE STYLES
 }
 
 .faq_wrapper {
-  display: flex;
-  justify-content: center;
+  background-color: black;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .dropdown_faq {
+  margin: auto;
   min-height: 150vh;
   background-color: var(--dropdown);
   color: white;
