@@ -26,6 +26,10 @@
 <body>
     <script>AOS.init();</script>
 
+    <div class="logo">
+      <a href="index.html"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    </div>
+
     <div class="big_menu">
         <div class="links">
             <a href="index.html">Home</a>
@@ -67,12 +71,35 @@
                 </video>
             </div>
         </div>
-
+<!-- HOVER IMAGES/VIDEOS -->
         <div class="hover_images main_content">
             <div class="hover_left">
                 <div class="hover_box">
-                    <div id="video_1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
-                        <video class="clip" width="100%" height="100%" muted loop>
+                    <div class="video_1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                        <video class="clip" muted loop>
+                            <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
+                            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                </div>
+                <br>
+                <h3>Swaying Red Poppies</h3>
+                
+                <div class="hover_box">
+                    <div class="video_2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+                        <video class="clip" muted loop>
+                            <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
+                            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="hover_box">
+                    <div class="video_1">
+                        <video class="clip" muted loop>
                             <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                             Your browser does not support the video tag.
@@ -82,42 +109,20 @@
                 </div>
                 
                 <div class="hover_box">
-                    <div id="video_2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
-                        <video class="clip" width="100%" height="100%" muted loop>
+                    <div class="video_2">
+                        <video class="clip" muted loop>
                             <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                             Your browser does not support the video tag.
                         </video>
                     </div>
                 </div>
-                
-                <div class="hover_box">
-                    <div id="video_1">
-                        <video class="clip" width="100%" height="100%" muted loop>
-                            <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
-                            <!-- <source src="movie.ogg" type="video/ogg"> -->
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <h3>Swaying Red Poppies</h3>
-                </div>
-                
-                <div class="hover_box">
-                    <div id="video_2">
-                        <video class="clip" width="100%" height="100%" muted loop>
-                            <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
-                            <!-- <source src="movie.ogg" type="video/ogg"> -->
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-
             </div> <!-- end hover left -->
 
             <div class="hover_right">
                 <div class="hover_box">
-                    <div id="video_2"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
-                        <video class="clip" width="100%" height="100%" muted loop>
+                    <div class="video_2"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+                        <video class="clip" muted loop>
                             <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                             Your browser does not support the video tag.
@@ -126,8 +131,8 @@
                 </div>
 
                 <div class="hover_box">
-                    <div id="video_1">
-                        <video class="clip" width="100%" height="100%" muted loop>
+                    <div class="video_1">
+                        <video class="clip" muted loop>
                             <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                             Your browser does not support the video tag.
@@ -137,8 +142,8 @@
                 </div>
 
                 <div class="hover_box">
-                    <div id="video_2">
-                        <video class="clip" width="100%" height="100%" muted loop>
+                    <div class="video_2">
+                        <video class="clip" muted loop>
                             <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                             Your browser does not support the video tag.
@@ -147,15 +152,16 @@
                 </div>
 
                 <div class="hover_box">
-                    <div id="video_1">
-                        <video class="clip" width="100%" height="100%" muted loop>
+                    <div class="video_1">
+                        <video class="clip" muted loop>
                             <source src="resources/videos/hovervideo1.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3>Swaying Red Poppies</h3>
+                    
                 </div>
+                <h3>Swaying Red Poppies</h3>
             </div>
         </div><!-- end hover_images -->
 
@@ -192,6 +198,8 @@
         <div class="dropdown_faq main_content">
             <h3>FAQ - 12 Questions about gardening</h3>
             <br>
+            <!-- https://timesofindia.indiatimes.com/life-style/home-garden/12-most-common-gardening-questions-answered/photostory/65021755.cms?picid=65021774 -->
+
             <div class="faq_question">
                 <div class="question_text">
                     <span>What is the best way to turn my balcony into a garden space?</span>                
@@ -204,8 +212,140 @@
                     </div>
             </div>
 
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Which are the best indoor plants?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Any daily gardening tips to maintain plants?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Which plants work best in pots?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Which is better - planters or planting in the soil?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Which plants necessarily need moss support?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Does putting decorative pebbles in the planter hamper a plant's health?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>How often do you recommend fertilizing?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>How often should we replace soils in pots?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>What's the best way to maintain clay planters in an all-weather garden?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>Is it easy to grow microgreens?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
+            <div class="faq_question">
+                <div class="question_text">
+                    <span>What is the best way to turn my balcony into a garden space?</span>                
+                    <span class="faq_toggle_btn fa fa-angle-down"></span>   
+                </div>                 
+                    <div class="faq_box">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sunt odio dignissimos fuga
+                        aperiam nam impedit maxime itaque a temporibus beatae officiis iste cupiditate adipisci veniam
+                        numquam facere qui! Assumenda.</span>
+                    </div>
+            </div>
+
             
-        </div>
+        </div><!-- end dropdown_faq -->
     </div> <!-- end faq_wrapper -->
 
     <script> burger();</script>

@@ -72,6 +72,19 @@ body {
   margin-bottom: 20px;
 }
 
+.logo {
+  position: fixed;
+  cursor: pointer;  
+  z-index: 40;
+  top: 50px;
+  left: 366px;
+}
+
+.logo i {
+  font-size: 64px;
+  color: black;
+}
+
 .nav_burger {
   position: fixed;
   cursor: pointer;
@@ -316,12 +329,22 @@ INDEX PAGE STYLES
   width: 71%;
   height: 81vh;
   margin: auto;
-  background-color: burlywood;
+  background-color: white;
   overflow: hidden;
+  filter: saturate(50%);
+  transform-origin: center;
+  transition: transform 0.25s;
 }
 
 .large_video {
   overflow: hidden;
+  
+}
+
+.splash_wrapper:hover {
+  filter: saturate(75%);
+  transform: scale(1.01);  
+  cursor: pointer;
 }
 
 .hover_images {
@@ -353,12 +376,6 @@ INDEX PAGE STYLES
   /* background-color: darkgoldenrod; */
 }
 
-/*
-.hover_images .hover_left .hover_box, .hover_right .hover_box
-{
-    filter: grayscale(1);
-}
-*/
 .hover_box video {
   filter: grayscale(30%);
 }
@@ -370,7 +387,7 @@ INDEX PAGE STYLES
   cursor: url("../resources/custom.svg"), pointer;
 }
 
-#video_1 {
+.video_1 {
   background-color: blueviolet;
   width: 435px;
   height: 580px;
@@ -378,7 +395,15 @@ INDEX PAGE STYLES
   display: block;
 }
 
-#video_2 {
+.video_1 .clip {
+  transform-origin: top left;
+  transform: scale(123%);
+  /* width: 600px;
+  height: 580px;
+  margin-left: -50px; */
+}
+
+.video_2 {
   background-color: blueviolet;
   width: 435px;
   height: 435px;
@@ -386,6 +411,12 @@ INDEX PAGE STYLES
   overflow: hidden;
   display: block;
 }
+
+.video_2 .clip {
+  transform-origin: top left;
+  transform: scale(123%); 
+}
+
 
 .history_wrapper {
   background-color: grey;
@@ -410,7 +441,7 @@ INDEX PAGE STYLES
 }
 
 .dropdown_faq {
-  height: 150vh;
+  min-height: 150vh;
   background-color: var(--dropdown);
   color: white;
   font-size: 2em;
@@ -426,6 +457,7 @@ INDEX PAGE STYLES
   line-height: 44px;
   letter-spacing: -1px;
   transition: 0.67s;
+  margin-top: 50px;
 }
 
 .question_text:hover {
@@ -435,33 +467,33 @@ INDEX PAGE STYLES
 
 .faq_box {
   display: none;
-  width: 100%;
-  /* height: 50vh;*/
+  width: 90%;  
   color: grey;
   background-color: black;
-  font-size: 0.5em;
+  font-size: 18px;
+  line-height: 24px;  
   margin-top: 20px;
 }
 
 .faq_open {
-  display: inline-block;
+  display: inline-block;  
 }
 
 .div_open {
-  display: block;
+  display: block;  
 }
 
 .fa-angle-down {
-  font-size: 24px;
+  font-size: 26px;
   color: grey;
   transform: rotate(0deg);
-  transition: transform 0.125s linear;
+  transition: transform 0.500s ease;
 }
 
 .fa-angle-down.open {
   color: grey;
   transform: rotate(180deg);
-  transition: transform 0.125s linear;
+  transition: transform 0.500s ease;
 }
 
 /*
