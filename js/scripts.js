@@ -9,13 +9,7 @@ Multiline comment in js
 
 // JSON
 
-var quotes =
-   [
-      {
-         "quote_text" : "If you have a garden in your library, everything will be complete.",
-         "author" : "Marcus Tullius Cicero, Letter to Varro, 1st century AD"
-      }
-   ]
+
    
 var clients = 
    [         
@@ -125,3 +119,49 @@ function pausePlay()
       })
    })
 }
+
+// https://www.daviddomoney.com/35-inspirational-gardening-quotes-and-famous-proverbs/
+
+var quote =
+   [
+      {
+         "text" : "If you have a garden in your library, everything will be complete.",
+         "author" : "Marcus Tullius Cicero, Letter to Varro, 1st century AD"
+      },
+
+      {
+         "text" : "Life begins the day you start a garden.",
+         "author" : "Chinese proverb"
+      },
+
+      {
+         "text" : "There are no gardening mistakes, only experiments.",
+         "author" : "Janet Kilburn Phillips"
+      },
+
+      {
+         "text" : "Gardening adds years to your life and life to your years. ",
+         "author" : "Unknown"
+      },
+
+      {
+         "text" : "A society grows great when old men plant trees whose shade they know they shall never sit in.",
+         "author" : "Greek proverb"
+      }
+   ]
+
+function quotesTimer()
+ {
+	 const quoteTextDiv = document.querySelector('.quote_text');
+    const quoteAuthorDiv = document.querySelector('.quote_author');
+
+	 setInterval(function () {
+		 let max = 5;
+		 let whichQuote = Math.floor(Math.random() * max);
+
+		 console.log(whichQuote);
+
+		 quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span';
+       quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span';
+	 }, 4000);	 
+ }

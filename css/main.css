@@ -581,13 +581,13 @@ ABOUT PAGE STYLES
 .about_awards {
   margin: auto;
   height: 45vh;
-  background-color: darkorange;
+  background-color: #15141a;
 }
 
 .about_carousel {
-  margin: auto;
-  height: 50vh;
-  background-color: darkslateblue;
+  /* margin: auto; */
+  height: 100vh;
+  background-color: #15141a;
 }
 
 /*
@@ -641,7 +641,7 @@ CLIENTS PAGE STYLES
 
 .quotes_wrapper {
   height: 61vh;
-  background-color: black;
+  background-color: #15141a;
 }
 
 .clients_quotes {
@@ -653,18 +653,32 @@ CLIENTS PAGE STYLES
 }
 
 .a_quote {
-  
-  height: 50%;
-  width: 50%;
-  background-color: lightgray;
+  width: 80%;
+  height: 45%;  
+  background-color: #15141a;
 }
 
 .quote_text {
-  height: 50%;
+  height: 60%;
+  color: white;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: -1.2px;
 }
 
 .quote_author {
-  height: 50%;
+  height: 40%;
+  color: #565c66;
+  font-size: 20px;
+  letter-spacing: -0.8px;
+}
+
+.quote_text::before {
+  content: open-quote;
+}
+
+.quote_text::after {
+  content: close-quote;
 }
 
 /*
