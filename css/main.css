@@ -717,12 +717,31 @@ WORK PAGE STYLES
   height: 220vh;
 }
 
-.work_logos {
-  margin: auto;
-  background-color: black;
+.logos_wrapper {
+  background-color: #15141a;
   height: 105vh;
   color: white;
 }
+
+.work_logos {
+  margin: auto;
+  background-color: #15141a;
+  height: 100%;  
+}
+
+.all_clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.each_client {
+  background-color: grey;
+  min-width: 200px;
+  min-height: 200px;
+}
+
 
 /*
 -------------------------------------------------------------------------------------------------------
