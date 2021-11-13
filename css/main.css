@@ -699,9 +699,9 @@ WORK PAGE STYLES
 }
 
 .work_projects {
-  margin: auto;
+  /* margin: auto;
   background-color: cornflowerblue;
-  height: 425vh;
+  height: 425vh; */
 }
 
 .work_video {
