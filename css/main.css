@@ -574,6 +574,36 @@ INDEX PAGE STYLES
   margin: auto;
   background-color: white;
   height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events_list {
+  height: 75%;
+  width: 75%;  
+  background-color: var(--whitecolour);
+}
+
+.planting_table tr {
+  height: 100px;
+  
+}
+
+.planting_table tr td:nth-child(odd) {
+  font-size: 20px;
+  color: #8594AB;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  background-color: bisque;
+}
+
+.planting_table tr td:nth-child(even) {
+  color: black;
+  text-align: left;
+  vertical-align: top;
+  background-color:burlywood;
 }
 
 .faq_wrapper {
