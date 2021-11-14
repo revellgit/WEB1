@@ -112,17 +112,39 @@ body {
   top: 68px;
   right: 412px;
   /* mix-blend-mode: multiply; */
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 
 .line_1,
 .line_2 {
-  /* position: absolute; */
+  position: relative;
   width: 24px;
   height: 2px;
   background-color: #333;
+  margin: 6px 0;  
+}
+
+.line_1::before,
+.line_2::before {
+  content: ""; 
+  z-index: 99;
+  position: absolute;
+  background-color: pink;
+  top: -6px;
+  width: 0px;
+  height: 2px;  
   margin: 6px 0;
-  transition: 0.4s;
+  transform-origin: left;
+  transition: width 0.3s;
+}
+
+.line_1:hover::before,
+.line_2:hover::before {  
+  z-index: 99;
+  /* background-color: pink;   */
+  width: 24px;
+  height: 2px;  
+  /* margin: 6px 0;   */
 }
 
 .line_1.active {
