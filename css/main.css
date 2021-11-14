@@ -107,6 +107,15 @@ body {
   transition: 0.4s;
 }
 
+.line_1.active {
+  
+  transform: translateY(4px) rotate(45deg);
+}
+
+.line_2.active {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
 .big_menu {
   /* display: none; */
   /* position: absolute; */
@@ -227,11 +236,13 @@ footer span {
   /* display: grid; */
 }
 
-.internal_links ul, .external_links ul {
+.internal_links ul,
+ .external_links ul {
   list-style-type: none;
 }
 
-.internal_links ul li, .external_links ul li {
+.internal_links ul li,
+ .external_links ul li {
   margin-bottom: 17px;
 }
 
