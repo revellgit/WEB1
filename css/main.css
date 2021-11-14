@@ -72,8 +72,11 @@ body {
   display: block;
   font-size: 28px;
   margin-bottom: 20px;
-  opacity: 0;
-  
+  opacity: 0;  
+}
+
+.links a:active {
+  text-decoration: none;
 }
 
 .links a:nth-child(1) {
