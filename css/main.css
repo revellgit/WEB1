@@ -422,6 +422,11 @@ INDEX PAGE STYLES
   cursor: pointer;
 }
 
+.index_various {
+  height: 100vh;
+  background-color: var(--whitecolour);
+}
+
 .hover_images {
   height: 300vh;
   margin: auto;
@@ -431,28 +436,28 @@ INDEX PAGE STYLES
 }
 
 .hover_left {
-  width: 50%;
+  width: 57%;
   height: 100%;
-  background-color: white;
+  background-color: var(--whitecolour);
 }
 
 .hover_right {
-  width: 50%;
+  width: 43%;
   height: 100%;
-  background-color: slategrey;
+  background-color: var(--whitecolour);
 }
 
 .hover_box {
   overflow: hidden;
-  margin-top: 20px;
-  margin-left: 40px;
+  /* margin-top: 20px;
+  margin-left: 40px; */
   transform-origin: center;
   transition: transform 0.25s;
   /* background-color: darkgoldenrod; */
 }
 
 .hover_box video {
-  filter: grayscale(30%);
+  filter: grayscale(40%);
 }
 
 .hover_box:hover {
@@ -463,9 +468,18 @@ INDEX PAGE STYLES
 }
 
 .video_1 {
-  background-color: blueviolet;
+  background-color: var(--whitecolour);
   width: 435px;
   height: 580px;
+  overflow: hidden;
+  display: block;
+}
+
+.video_2 {
+  background-color: var(--whitecolour);
+  width: 435px;
+  height: 435px;
+  /* margin-top: 45px; */
   overflow: hidden;
   display: block;
 }
@@ -478,20 +492,43 @@ INDEX PAGE STYLES
   margin-left: -50px; */
 }
 
-.video_2 {
-  background-color: blueviolet;
-  width: 435px;
-  height: 435px;
-  margin-top: 50px;
-  overflow: hidden;
-  display: block;
-}
-
 .video_2 .clip {
   transform-origin: top left;
   transform: scale(123%); 
 }
+/* Adding different sized margins to the top of each hover_box */
 
+/* Left side */
+
+.hover_left .hover_box:nth-of-type(2) {
+  margin-top: 190px;
+}
+
+.hover_left .hover_box:nth-of-type(3) {
+  margin-top: 250px;
+}
+
+.hover_left .hover_box:nth-of-type(4) {
+  margin-top: 250px;
+}
+
+/* Right side */
+
+.hover_right .hover_box:nth-of-type(1) {
+  margin-top: 45px;
+}
+
+.hover_right .hover_box:nth-of-type(2) {
+  margin-top: 210px;
+}
+
+.hover_right .hover_box:nth-of-type(3) {
+  margin-top: 200px;
+}
+
+.hover_right .hover_box:nth-of-type(4) {
+  margin-top: 200px;
+}
 
 .history_wrapper {
   background-color: grey;
