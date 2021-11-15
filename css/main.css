@@ -580,31 +580,60 @@ INDEX PAGE STYLES
 }
 
 .events_list {
-  height: 75%;
-  width: 75%;  
+  height: 85%;
+  width: 85%;  
   background-color: var(--whitecolour);
 }
 
-.planting_table tr {
-  height: 100px;
-  
+/* .planting_table {
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+} */
+
+.planting_table tr {  
+  min-height: 200px;  
 }
 
-.planting_table tr td:nth-child(odd) {
+.planting_table tr td:nth-child(2n+1) {
   font-size: 20px;
   color: #8594AB;
   width: 25%;
+  height: 125px;
   text-align: left;
   vertical-align: top;
   background-color: bisque;
 }
 
-.planting_table tr td:nth-child(even) {
+.planting_table tr td:nth-child(2n) {
   color: black;
   text-align: left;
   vertical-align: top;
   background-color:burlywood;
 }
+
+.suggestion_text:hover {
+  cursor: pointer;
+}
+
+.suggestion_img {
+  opacity: 0.2;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.suggestion_img img {
+  
+  width: 100%;
+  height: 100%;
+  display: block;  
+}
+
+.appear {
+  opacity: 1.0;
+}
+
+/* .suggestions_img */
 
 .faq_wrapper {
   background-color: black;

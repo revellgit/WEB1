@@ -130,6 +130,27 @@ function pausePlay()
    })
 }
 
+function showSuggestion()
+{
+   const suggText = document.querySelectorAll('.suggestion_text');
+   //const suggImg = document.querySelectorAll('.suggestion_img');
+
+   //console.log(suggImg);
+
+   suggText.forEach(elem => {
+      elem.addEventListener('mouseenter', () => {
+         const img = elem.nextElementSibling;
+            img.classList.add('appear');
+         console.log(img);
+      })
+      elem.addEventListener('mouseout', () => {
+         const img = elem.nextElementSibling;
+         img.classList.remove('appear');
+         console.log('out');
+      })
+   })
+}
+
 // https://www.daviddomoney.com/35-inspirational-gardening-quotes-and-famous-proverbs/
 
 var quote =
