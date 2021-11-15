@@ -762,8 +762,8 @@ CLIENTS PAGE STYLES
 */
 
 .clients_header {
-  height: 25vh;
-  background-color: aqua;
+  height: 35vh;
+  background-color: var(--whitecolour);
 }
 
 .clients_titles {
@@ -772,9 +772,20 @@ CLIENTS PAGE STYLES
   background-color: aquamarine;
 }
 
+.clients_text {
+  font-size: 60px;
+}
+
+.clients_description {
+  padding-top: 70px;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: -1.4px;
+}
+
 .clients_boxes {
   margin: auto;
-  max-height: 330vh;
+  min-height: 115vh;
   background-color: cadetblue;
 }
 
@@ -797,11 +808,11 @@ CLIENTS PAGE STYLES
 .box_item {
   min-width: 100px;
   min-height: 200px;
-  background-color: chocolate;
+  background-color: grey;
 }
 
 .box_item:nth-child(odd) {
-  background-color: darkolivegreen;
+  background-color: var(--whitecolour);
 }
 
 .quotes_wrapper {
