@@ -12,7 +12,7 @@ CSS VARIABLES
   --bodycolour: white;
   --dropdown: black;
   --footercolour: #212129;
-  --whitecolour: #ebebeb;
+  --whitecolour: #ffffff;
 }
 
 /*
@@ -97,7 +97,7 @@ body {
   z-index: 40;
   top: 50px;
   left: 366px;
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 
 .nav_logo i {
@@ -345,7 +345,7 @@ footer span {
   /* z-index: 999; */
   justify-content: normal;
   width: 100vw;
-  height: 50vh;
+  height: 75vh;
   background-color: var(--whitecolour);
   overflow: hidden;
 }
@@ -462,11 +462,11 @@ INDEX PAGE STYLES
 }
 
 .hover_images {
-  height: 325vh;
+  min-height: 325vh;
   margin: auto;
   display: flex;
   /* flex-direction: column;*/
-  background-color: darkcyan;
+  background-color: var(--whitecolour);
 }
 
 .hover_left {
@@ -578,7 +578,7 @@ INDEX PAGE STYLES
 .events_wrapper {
   margin: auto;
   background-color: white;
-  height: 65vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -625,7 +625,7 @@ INDEX PAGE STYLES
   opacity: 0.0;
   max-width: 20%;
   max-height: 20%;
-  transition: 0.8s;
+  transition: 1.3s;
 }
 
 .suggestion_img img {
@@ -636,10 +636,8 @@ INDEX PAGE STYLES
 }
 
 .appear {
-  opacity: 1.0;
+  opacity: 1.0;  
 }
-
-/* .suggestions_img */
 
 .faq_wrapper {
   background-color: black;
