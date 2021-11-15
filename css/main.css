@@ -129,7 +129,7 @@ body {
   content: ""; 
   z-index: 99;
   position: absolute;
-  background-color: pink;
+  background-color: rgb(43, 137, 226);
   top: -6px;
   width: 0px;
   height: 2px;  
@@ -148,12 +148,17 @@ body {
 }
 
 .line_1.active {
-  
+  transition: 0.5s;
+  background-color: white;
   transform: translateY(4px) rotate(45deg);
+  pointer-events: none;
 }
 
 .line_2.active {
+  transition: 0.5s;
+  background-color: white;
   transform: translateY(-4px) rotate(-45deg);
+  pointer-events: none;
 }
 
 .big_menu {
@@ -617,9 +622,10 @@ INDEX PAGE STYLES
 }
 
 .suggestion_img {
-  opacity: 0.2;
+  opacity: 0.0;
   max-width: 20%;
   max-height: 20%;
+  transition: 0.8s;
 }
 
 .suggestion_img img {
