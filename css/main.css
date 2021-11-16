@@ -435,7 +435,7 @@ footer span {
 .carousel-cell {
   width: 25%; /* half-width */
   height: 50vh;
-  margin-right: 90px;
+  margin-right: 45px;
 }
 
 .carousel-cell img {
@@ -722,7 +722,7 @@ INDEX PAGE STYLES
 
 .faq_wrapper {
   background-color: black;
-  min-height: 185vh;
+  min-height: 200vh;
   /* display: flex;
   justify-content: center; */
 }
