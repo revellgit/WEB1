@@ -154,13 +154,18 @@ function createboxes()
    
    clients.forEach(elem => {     
       const box_item_div = document.createElement('div');
-      box_item_div.classList.add('box_item');
+      box_item_div.classList.add('box_item');      
+      box_item_div.setAttribute('data-aos', 'fade-up');
+      box_item_div.setAttribute('data-aos-delay', '100');
+      box_item_div.setAttribute('data-aos-duration', '900');
 
-      box_parent.appendChild(box_item_div);
       box_item_div.innerHTML += '<h3>' + elem.title + '</h3>'
       box_item_div.innerHTML += '<p>' + elem.description + '</p>'
-   })
 
+      box_parent.appendChild(box_item_div);
+
+      
+   })
 }
 
 function pausePlay()

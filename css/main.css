@@ -744,9 +744,9 @@ INDEX PAGE STYLES
 .suggestion_img {
   /* Adjust image size and initial opacity, transition timing */
   opacity: 0.0;
-  max-width: 50%;
-  max-height: 25%;
-  transition: 1.3s;
+  max-width: 45%;
+  max-height: 50%;
+  transition: 1.3s; 
 }
 
 .suggestion_img img {  
