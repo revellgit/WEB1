@@ -151,20 +151,22 @@ function opendiv()
 function createboxes()
 {   
    const box_parent = document.querySelector('.boxes_wrapper');   
-   
+   let delay = 0;
    clients.forEach(elem => {     
       const box_item_div = document.createElement('div');
+      let delayAmount = 100 * (delay % 4);
+
       box_item_div.classList.add('box_item');      
       box_item_div.setAttribute('data-aos', 'fade-up');
-      box_item_div.setAttribute('data-aos-delay', '100');
-      box_item_div.setAttribute('data-aos-duration', '900');
+      box_item_div.setAttribute('data-aos-delay', delayAmount);
+      box_item_div.setAttribute('data-aos-duration', '500');
 
       box_item_div.innerHTML += '<h3>' + elem.title + '</h3>'
       box_item_div.innerHTML += '<p>' + elem.description + '</p>'
 
       box_parent.appendChild(box_item_div);
-
-      
+      delay += 1;
+      console.log(delayAmount);      
    })
 }
 
