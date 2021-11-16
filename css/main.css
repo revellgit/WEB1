@@ -336,7 +336,7 @@ footer span {
 }
 
 .footer_logo i {
-  font-size: 156px;
+  font-size: 75px;
   color: cyan;
 }
 
@@ -425,11 +425,18 @@ footer span {
 
 .carousel_wrapper {
   /* z-index: 999; */
-  justify-content: normal;
+  display: flex;
+  align-items: center;
+  /* justify-content: normal; */
   width: 100vw;
   height: 75vh;
   background-color: var(--whitecolour);
   overflow: hidden;
+}
+
+.carousel_content {
+  width: 100%;
+  height: 50%;
 }
 
 .carousel-cell {
@@ -680,7 +687,7 @@ INDEX PAGE STYLES
 }
 
 .history_wrapper {
-  background-color: grey;
+  background-color: var(--whitecolour);
   height: 50vh;
 }
 
@@ -693,7 +700,7 @@ INDEX PAGE STYLES
 .events_wrapper {
   margin: auto;
   background-color: white;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -705,11 +712,9 @@ INDEX PAGE STYLES
   background-color: var(--whitecolour);
 }
 
-/* .planting_table {
-  table-layout: fixed;
-  width: 100%;
-  overflow: hidden;
-} */
+.planting_table {
+  margin-top: 70px;
+}
 
 .planting_table tr {  
   min-height: 200px;  
@@ -737,9 +742,10 @@ INDEX PAGE STYLES
 }
 
 .suggestion_img {
+  /* Adjust image size and initial opacity, transition timing */
   opacity: 0.0;
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 50%;
+  max-height: 25%;
   transition: 1.3s;
 }
 
