@@ -1,21 +1,18 @@
+// Javascript file : scripts.js
+ 
 /*
-Javascript file for documents
-/* 
-
 Multiline comment in js
 */
 
 // Single line comment in js
 
-// JSON
+// https://www.doc.govt.nz/nature/native-plants/
 
-
-   
 var clients = 
    [         
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Beech forest", 
+         "description": "New Zealand's beech forests are made up of five species of southern beech."
       },
       { 
          "title": "title2", 

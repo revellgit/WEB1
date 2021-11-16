@@ -495,8 +495,8 @@ footer span {
 }
 
 .flickity-button-icon {
-  fill: black;
-  opacity: 0.5;
+  fill: white;
+  opacity: 0.8;
 }
 
 .flickity-prev-next-button.next {
@@ -504,6 +504,7 @@ footer span {
 }
 
 .flickity-prev-next-button {
+  top: 235px;
   width: 50px;
   height: 50px;
 }
@@ -843,19 +844,71 @@ ABOUT PAGE STYLES
 
 .about_header {
   height: 33vh;
-  background-color: aqua;
+  background-color: lightblue;
 }
 
 .about_title {
   margin: auto;
+  height: 100%;
+  background-color: lightblue;
+}
+
+.about_title_wrapper {
   height: 52vh;
   background-color: lightblue;
 }
 
+.about_content {
+  width: 66%;
+}
+
+.about_wedo_wrapper {
+  max-height: 340vh;
+  background-color: var(--whitecolour);
+}
+
 .about_wedo {
   margin: auto;
-  height: 340vh;
+  /* width: 100%; */
+  /* height: 340vh; */
   background-color: lightgoldenrodyellow;
+  display: grid;
+  grid-template-areas: 'left right';
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat (5, 1fr);
+  /* grid-auto-flow: row; */
+  grid-gap: 0;
+}
+
+.item1 {
+  grid-area: left;
+  grid-row: span 1;
+  background-color:darkkhaki;
+}
+
+.item2 {
+  grid-area: right;
+  grid-row: span 1;
+  background-color:darkolivegreen;
+}
+
+.item3 {
+  grid-area: left;
+  grid-row: span 1;
+  background-color: crimson;
+}
+
+.item4 {
+  grid-area: left;
+  grid-row: span 1;
+}
+
+.about_text {
+  background-color: coral;
+}
+
+.about_img {
+  background-color: crimson;
 }
 
 .about_skills {
@@ -886,7 +939,17 @@ ABOUT PAGE STYLES
   /* margin: auto; */
   height: 100vh;
   background-color: #15141a;
-}
+  
+    /* z-index: 999; */
+    display: flex;
+    align-items: center;
+    /* justify-content: normal; */
+    width: 100vw;
+    /* height: 75vh; */
+    /* background-color: var(--whitecolour); */
+    overflow: hidden;
+  }
+
 
 /*
 -------------------------------------------------------------------------------------------------------
@@ -941,12 +1004,25 @@ CLIENTS PAGE STYLES
 .box_item {
   min-width: 100px;
   min-height: 200px;
-  background-color: grey;
-}
-
-.box_item:nth-child(odd) {
   background-color: var(--whitecolour);
 }
+
+.box_item h3 {
+  font-size: 24px;
+  letter-spacing: -0.38px;
+  line-height: 24px;
+}
+
+.box_item p {
+  font-size: 16px;
+  letter-spacing: 0;
+  margin-top: 14px;
+  line-height: 24px;
+}
+
+/* .box_item:nth-child(odd) {
+  background-color: var(--whitecolour);
+} */
 
 .quotes_wrapper {
   height: 61vh;
