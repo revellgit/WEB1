@@ -87,18 +87,19 @@ function donothing()
 document.onclick = function(e) {
    console.log(e.target.className);
    console.log('');
-   
-   if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger' && e.target.className !== 'line_1' && e.target.className !== 'line_2')
+   // if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger' && e.target.className !== 'line_1' && e.target.className !== 'line_2')
+   if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger active')
    {
       //console.log('hello');
       const nav_menu = document.querySelector('.big_menu');
-      const l1 = document.querySelector('.line_1');
-      const l2 = document.querySelector('.line_2');
+      const menu_button = document.querySelector('.nav_burger');
+      // const l1 = document.querySelector('.line_1');
+      // const l2 = document.querySelector('.line_2');
 
       nav_menu.classList.remove('menu_open')
-
-      l1.classList.remove('active');
-      l2.classList.remove('active');
+      menu_button.classList.remove('active');
+      // l1.classList.remove('active');
+      // l2.classList.remove('active');
    }
    
 }
@@ -107,17 +108,18 @@ function burger()
 {
    const menu_button = document.querySelector('.nav_burger');
    const nav_menu = document.querySelector('.big_menu');
-   const l1 = document.querySelector('.line_1');
-   const l2 = document.querySelector('.line_2');
+   // const l1 = document.querySelector('.line_1');
+   // const l2 = document.querySelector('.line_2');
 
-   let menu_open = false;
+   // let menu_open = false;
 
    menu_button.addEventListener('click', () => {
-
       nav_menu.classList.toggle('menu_open');
-      l1.classList.toggle('active');
-      l2.classList.toggle('active');
-      console.log('toggle');     
+      menu_button.classList.toggle('active');
+
+      // l1.classList.toggle('active');
+      // l2.classList.toggle('active');
+      // console.log('toggle');     
       })
    
 }

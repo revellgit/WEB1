@@ -109,24 +109,93 @@ body {
   position: fixed;
   cursor: pointer;
   z-index: 40;
+
   top: 68px;
-  right: 412px;
+  right: 412px;  
+  width: 24px;
+  height: 24px;
+  
+  justify-content: center;
+  align-items:center;
   /* mix-blend-mode: multiply; */
   /* filter: invert(100%); */
+  /* background-color: white; */
 }
 
-.line_1,
-.line_2 {
-  position: relative;
+.nav_burger::before {
+  content: '';
+  position: absolute;
+  /* z-index: 98; */
   width: 24px;
   height: 2px;
   background-color: #333;
-  margin: 6px 0;  
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
 
-.line_1::before,
-.line_2::before {
-  content: ""; 
+.nav_burger::after {
+  content: '';
+  position: absolute;
+  /* z-index: 99; */
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  transform: translateY(5px);
+  transition: 0.3s;
+}
+
+/* .nav_burger:not(.active):hover {
+  pointer-events: none;
+} */
+
+.nav_burger.active::before {
+  z-index: 100;
+  background-color: white;
+  transform: translateY(0px) rotate(45deg);  
+}
+
+.nav_burger.active::after {
+  z-index: 101;
+  background-color: white;
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.nav_burger:hover::before {
+  /* z-index: 99; */
+  background-color: rgb(43, 137, 226);
+}
+
+.nav_burger:hover::after {
+  /* z-index: 99; */
+  background-color: rgb(43, 137, 226);
+}
+
+.nav_burger.active:hover::before {  
+  background-color: white;
+}
+
+.nav_burger.active:hover::after {  
+  background-color: white;
+}
+
+/* .lines {  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  top: 0;
+  width: 24px;
+  height: 2px;
+  background-color: green;
+  margin: 2px 0;
+  width: 24px;
+  height: 2px;
+  
+  margin: 12px 0;  
+} */
+
+/* .nav_burger:hover::before {
+  content: ''; 
   z-index: 99;
   position: absolute;
   background-color: rgb(43, 137, 226);
@@ -137,6 +206,19 @@ body {
   transform-origin: left;
   transition: width 0.3s;
 }
+
+.nav_burger:hover::after {
+  content: ''; 
+  z-index: 99;
+  position: absolute;
+  background-color: rgb(43, 137, 226);
+  top: -6px;
+  width: 0px;
+  height: 2px;  
+  margin: 6px 0;
+  transform-origin: left;
+  transition: width 0.3s;
+} */
 
 .line_1:hover::before,
 .line_2:hover::before {  
