@@ -6,6 +6,7 @@ Multiline comment in js
 
 // Single line comment in js
 
+
 // https://www.doc.govt.nz/nature/native-plants/
 
 var clients = 
@@ -15,64 +16,64 @@ var clients =
          "description": "New Zealand's beech forests are made up of five species of southern beech."
       },
       { 
-         "title": "title2", 
-         "description": "lepros davos etc." 
+         "title": "Cabbage tree", 
+         "description": "The cabbage tree is one of the most distinctive trees in the New Zealand landscape, especially on farms. They grow all over the country, but prefer wet, open areas like swamps." 
       },
       {
-         "title": "title3", 
-         "description": "lepros davos etc."
+         "title": "Chatham Islands plants", 
+         "description": "The Chatham Islands have been isolated for more than 80 million years, long enough to develop many plants found nowhere else."
       },
       {
-         "title": "title4", 
-         "description": "lepros davos etc."
+         "title": "Coastal cress", 
+         "description": "The coastal cress is one of New Zealand's lesser-known endangered species, but there is considerable concern about the decline of this plant."
       },
       {
-         "title": "title5", 
-         "description": "lepros davos etc."
+         "title": "Dactylanthus", 
+         "description": "Dactylanthus is New Zealand's only indigenous fully parasitic flowering plant."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "New Zealand ferns", 
+         "description": "New Zealand has an unusually high number of fern species for a temperate country and about 40 per cent of these species occur nowhere else in the world."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Freshwater algae", 
+         "description": "Green slime and brown scum on stream beds is usually regarded as an unattractive nuisance however, it is a vital part of stream ecosystems."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Golden sand sedge", 
+         "description": "Pīkao or pīngao is a native sand-binding sedge that plays an important role in New Zealand's dune ecosystems."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Harakeke/flax", 
+         "description": "There are two identified species of flax in New Zealand - common flax (harakeke) and mountain flax (wharariki)."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Kakabeak/Ngutukaka", 
+         "description": "Kākābeak is named for its beautiful red flowers, which hang in clusters of 15-20 blooms and are shaped like a kaka's beak."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Kauri", 
+         "description": "Kauri are among the world's mightiest trees, growing to over 50 m tall, with trunk girths up to 16 m, and living for over 2,000 years."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Kettle hold plants", 
+         "description": "Kettle holes are a feature of a glaciated landscape. Plants in these habitats have a remarkable lifecycle."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Kowhai", 
+         "description": "The kōwhai is one of the best known native trees in New Zealand and it’s our unofficial national flower."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Lancewood/Horoeka", 
+         "description": "Lancewood, or horoeka, is a unique, small tree with lance-like foliage that changes dramatically as the tree matures."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Mount Cook buttercup", 
+         "description": "The Mount Cook buttercup is the world's largest buttercup and is also known as the giant buttercup or mountain buttercup. It used to be known as the Mount Cook lily."
       },
       {
-         "title": "title1", 
-         "description": "lepros davos etc."
+         "title": "Nikau palm", 
+         "description": "The nīkau palm is the southernmost member of the palm family and New Zealand's only native palm species."
       }
    ]
 
