@@ -9,6 +9,16 @@ Multiline comment in js
 
 // https://www.doc.govt.nz/nature/native-plants/
 
+function demo () {
+let quotesDiv = document.getElementById('quotes')
+
+fetch("https://stormy-harbor-45590.herokuapp.com/https://quiet-earth-90814.herokuapp.com/quotes/1")
+.then(res => res.json())
+.then(quote => {
+    quotesDiv.innerHTML += `<p> ${quote.text} </p>`
+})
+}
+
 var clients = 
    [         
       {
