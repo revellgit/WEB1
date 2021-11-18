@@ -621,7 +621,7 @@ INDEX PAGE STYLES
   filter: grayscale(0);
   transform: scale(1.025);
   /* Need to find a good custom cursor icon */
-  cursor: url("../resources/custom.svg"), pointer;
+  cursor: url("../img/custom.svg"), pointer;
 }
 
 .video_1 {
