@@ -23,7 +23,7 @@ COMMON STYLES
 
 @font-face {
   font-family: myFont;
-  src: url(../resources/fonts/texgyreheros-regular.otf);
+  src: url(../fonts/texgyreheros-regular.otf);
 }
 
 * {
