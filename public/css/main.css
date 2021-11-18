@@ -70,7 +70,7 @@ body {
 .links a {
   /* z-index: 40; */
   display: block;
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 20px;
   opacity: 0;  
 }
@@ -129,7 +129,7 @@ body {
   width: 24px;
   height: 2px;
   background-color: #333;
-  transform: translateY(-5px);
+  transform: translateY(6px);
   transition: 0.3s;
 }
 
@@ -140,34 +140,30 @@ body {
   width: 24px;
   height: 2px;
   background-color: #333;
-  transform: translateY(5px);
+  transform: translateY(14px);
   transition: 0.3s;
 }
-
-/* .nav_burger:not(.active):hover {
-  pointer-events: none;
-} */
 
 .nav_burger.active::before {
   z-index: 100;
   background-color: white;
-  transform: translateY(0px) rotate(45deg);  
+  transform: translateY(14px) rotate(45deg);  
 }
 
 .nav_burger.active::after {
-  z-index: 101;
+  z-index: 100;
   background-color: white;
-  transform: translateY(0px) rotate(-45deg);
+  transform: translateY(14px) rotate(-45deg);
 }
 
 .nav_burger:hover::before {
   /* z-index: 99; */
-  background-color: rgb(43, 137, 226);
+  background-color: rgb(37, 150, 190);
 }
 
 .nav_burger:hover::after {
   /* z-index: 99; */
-  background-color: rgb(43, 137, 226);
+  background-color: rgb(37, 150, 190);
 }
 
 .nav_burger.active:hover::before {  
@@ -248,7 +244,8 @@ body {
   /* position: absolute; */
   position: fixed;
   z-index: -1;
-  background-color: rgb(43, 137, 226);
+  background-color: rgb(43, 165, 229);
+  box-shadow: 0 27px 53px 0 rgb(1 93 140 / 24%);
   top: 26px;
   right: 354px;
   width: 23%;
