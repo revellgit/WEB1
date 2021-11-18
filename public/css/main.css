@@ -762,7 +762,7 @@ INDEX PAGE STYLES
 
 .faq_wrapper {
   background-color: black;
-  min-height: 210vh;
+  min-height: 200vh;
   /* display: flex;
   justify-content: center; */
 }
@@ -817,6 +817,11 @@ INDEX PAGE STYLES
   visibility: visible;
   transform: scaleY(1);
   height: 100%; 
+}
+
+.faq_space {
+  height: 15vh;
+  background-color: black;
 }
 
 .div_open {
