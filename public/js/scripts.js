@@ -247,7 +247,7 @@ function quotesTimer()
 
 		 console.log(whichQuote);
 
-		 quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span';
-       quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span';
+		 quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span>';
+       quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span>';
 	 }, 4000);	 
  }

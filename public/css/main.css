@@ -922,6 +922,40 @@ ABOUT PAGE STYLES
   background-color: lightgreen;
 }
 
+.about_skills h1 {
+  font-size: 36px;
+  line-height: 2.22;
+  letter-spacing: -2.1px;
+  padding-bottom: 10px;
+}
+
+.about_skills h2 {
+  font-size: 20px;
+}
+
+.links_catergories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.about_gardens {
+  color: black;
+  background-color: aqua;
+}
+
+.about_gardens ul {  
+  list-style-type: none;
+}
+
+.about_gardens ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: -0.7px;
+}
+
 .about_logos {
   margin: auto;
   height: 105vh;
