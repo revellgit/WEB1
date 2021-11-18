@@ -970,7 +970,7 @@ CLIENTS PAGE STYLES
 .clients_titles {
   margin: auto;
   height: 50vh;
-  background-color: aquamarine;
+  background-color: var(--whitecolour);
 }
 
 .clients_text {
@@ -987,7 +987,7 @@ CLIENTS PAGE STYLES
 .clients_boxes {
   margin: auto;
   min-height: 115vh;
-  background-color: cadetblue;
+  background-color: var(--whitecolour);
 }
 
 .boxes_wrapper {

@@ -229,6 +229,10 @@ var quote =
       {
          "text" : "A society grows great when old men plant trees whose shade they know they shall never sit in.",
          "author" : "Greek proverb"
+      },
+      {
+         "text" : "Garden as though you will live forever.",
+         "author" : "William Kent"
       }
    ]
 
@@ -238,7 +242,7 @@ function quotesTimer()
     const quoteAuthorDiv = document.querySelector('.quote_author');
 
 	 setInterval(function () {
-		 let max = 5;
+		 let max = 6;
 		 let whichQuote = Math.floor(Math.random() * max);
 
 		 console.log(whichQuote);
