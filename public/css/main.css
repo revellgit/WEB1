@@ -1188,33 +1188,42 @@ WORK PAGE STYLES
 
 .logos_wrapper {
   background-color: #15141a;
-  height: 50vh;
+  height: 75vh;
   color: white;
+  display: flex;
+  align-items: center; 
 }
 
-.work_logos {
+.work_logos {  
   margin: auto;
   background-color: #15141a;
-  height: 100%;  
+  height: 80%;
 }
 
 .all_clients {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 2px;
 }
 
 .each_client {
-  background-color: grey;
-  max-width: 200px;
-  max-height: 200px;
+  /* background-color: grey; */
+  max-width: 280px;
+  max-height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.each_client img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.each_client img {  
+  /* object-fit: cover; */
+  /* top: 50%; */
+  /* transform: translateY(50%); */
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%);
 }
 
 /*
