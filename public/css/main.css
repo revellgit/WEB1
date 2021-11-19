@@ -757,19 +757,27 @@ ABOUT PAGE STYLES
 */
 
 .about_header {
-  height: 33vh;
-  background-color: lightblue;
+  height: 29vh;
+  background-color: #ebf2f5;
+}
+
+.about_title_wrapper {
+  height: 52vh;
+  background-color: #ebf2f5;
 }
 
 .about_title {
   margin: auto;
   height: 100%;
-  background-color: lightblue;
+  font-size: 45px;
+  letter-spacing: -4px;
+  /* background-color: lightblue; */
 }
 
-.about_title_wrapper {
-  height: 52vh;
-  background-color: lightblue;
+.about_title p {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
 }
 
 .about_content {
