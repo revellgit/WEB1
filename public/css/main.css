@@ -465,7 +465,7 @@ INDEX PAGE STYLES
   font-size: 68px;
   letter-spacing: -4px;
   line-height: 70px;
-  height: 15%;
+  height: 16%;
 }
 
 .title_text span {
@@ -648,6 +648,10 @@ INDEX PAGE STYLES
   text-align: left;
   vertical-align: top;
   background-color: var(--whitecolour);
+}
+
+.suggestion_text {
+  font-size: 20px;
 }
 
 .suggestion_text:hover {
@@ -1178,6 +1182,7 @@ WORK PAGE STYLES
   background-color: azure;
   height: 61vh;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .work_list {
