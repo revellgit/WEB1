@@ -97,7 +97,7 @@ body {
   top: 50px;
   left: 366px;
   filter: invert(100%);
-  mix-blend-mode: difference;
+  mix-blend-mode: difference; 
 }
 
 .nav_logo i {
@@ -826,6 +826,10 @@ ABOUT PAGE STYLES
   background-color: var(--whitecolour);
 }
 
+.section1_text2 h1 {
+  margin-bottom: 20px;
+}
+
 .section1_tallimg {
   grid-area: tall1;  
 }
@@ -871,7 +875,11 @@ ABOUT PAGE STYLES
   height: 75%;  
   margin-left: auto; 
   margin-right: 0;
-  background-color: lightsteelblue;
+  background-color: var(--whitecolour);
+}
+
+.section2_text2 h1 {
+  margin-bottom: 20px;
 }
 
 .section2_tallimg {
@@ -900,7 +908,7 @@ ABOUT PAGE STYLES
 .wedo_section3 {
   width: 100%;
   height: 33%;
-  background-color: lightpink;
+  background-color: var(--whitecolour);
   display: grid;  
   grid-template-areas: 
     'words3 tall3'
@@ -911,7 +919,7 @@ ABOUT PAGE STYLES
 }
 
 .wedo_section3 > div {
-  background-color: lightseagreen;
+  background-color: var(--whitecolour);
 }
 
 .section3_text {
@@ -923,7 +931,11 @@ ABOUT PAGE STYLES
   height: 75%;  
   margin-left: auto; 
   margin-right: 0;
-  background-color: lightsteelblue;
+  background-color: var(--whitecolour);
+}
+
+.section3_text2 h1 {
+  margin-bottom: 20px;
 }
 
 .section3_tallimg {
