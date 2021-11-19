@@ -423,7 +423,7 @@ footer span {
   height: 50px;
 }
 
-.quotes {
+#quotes {
   background-color: black;
   color: lightgrey;
   text-align: center;
@@ -920,7 +920,7 @@ CLIENTS PAGE STYLES
 
 .clients_boxes {
   margin: auto;
-  min-height: 115vh;
+  min-height: 100vh;
   background-color: var(--whitecolour);
 }
 
