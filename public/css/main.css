@@ -823,39 +823,51 @@ ABOUT PAGE STYLES
   background-color: crimson;
 }
 
-.about_skills {
-  margin: auto;
-  height: 95vh;
-  background-color: lightgreen;
+.about_skills {  
+  min-height: 75vh;
+  background-color: #ebf2f5;
+  display: flex;
+  align-items: center; 
 }
 
-.about_skills h1 {
+.links_catergories {
+  margin: auto;
+  height: 100%;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 1fr;
+  
+  /* grid-template-rows: 1fr 1fr; */
+}
+.links_title {
+  margin-top: 25px;
+}
+
+.links_title h2 {
+  font-size: 20px;
+}
+
+.about_gardens h1,
+.about_stores h1 {
   font-size: 36px;
   line-height: 2.22;
   letter-spacing: -2.1px;
   padding-bottom: 10px;
 }
 
-.about_skills h2 {
-  font-size: 20px;
-}
-
-.links_catergories {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
 .about_gardens {
   color: black;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
-.about_gardens ul {  
+.about_gardens ul,
+.about_stores ul {  
   list-style-type: none;
 }
 
-.about_gardens ul li a {
+.about_gardens ul li a,
+.about_stores ul li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
@@ -869,7 +881,7 @@ ABOUT PAGE STYLES
   background-color: cadetblue;
 }
 
-.about_quotes {
+/* .about_quotes {
   margin: auto;
   height: 50vh;
   background-color: darkcyan;
@@ -879,14 +891,14 @@ ABOUT PAGE STYLES
   margin: auto;
   height: 45vh;
   background-color: #15141a;
-}
+} */
 
-.about_carousel {  
+.about_carousel { 
+  width: 100vw;  
   height: 100vh;
   background-color: #15141a;   
   display: flex;
-  align-items: center;   
-  width: 100vw;   
+  align-items: center;    
   overflow: hidden;
 }
 

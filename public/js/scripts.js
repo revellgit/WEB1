@@ -234,5 +234,5 @@ function quotesTimer()
 
 		 quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span>';
        quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span>';
-	 }, 4000);	 
+	 }, 10000);	 
  }
