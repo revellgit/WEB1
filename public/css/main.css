@@ -1157,13 +1157,14 @@ WORK PAGE STYLES
 
 .work_header {
   height: 25vh;
-  background-color: aqua;
+  background-color: var(--whitecolour);
 }
 
 .work_title {
   margin: auto;
-  background-color: azure;
-  height: 10vh;
+  background-color: var(--whitecolour);
+  height: 22vh;
+  font-size: 45px;
 }
 
 .work_projects {
@@ -1187,7 +1188,7 @@ WORK PAGE STYLES
 
 .logos_wrapper {
   background-color: #15141a;
-  height: 105vh;
+  height: 50vh;
   color: white;
 }
 
@@ -1206,8 +1207,14 @@ WORK PAGE STYLES
 
 .each_client {
   background-color: grey;
-  min-width: 200px;
-  min-height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.each_client img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*
