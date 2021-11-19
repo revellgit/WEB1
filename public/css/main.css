@@ -13,6 +13,7 @@ CSS VARIABLES
   --dropdown: black;
   --footercolour: #212129;
   --whitecolour: #ffffff;
+  --burgerblue: rgb(43, 165, 229);
 }
 
 /*
@@ -46,8 +47,7 @@ body {
   color: white;
 }
 
-.nav_bar {
-  /* display: flex; */
+.nav_bar {  
   position: fixed;
   z-index: 30;
   margin: 0;
@@ -109,12 +109,10 @@ body {
   position: fixed;
   cursor: pointer;
   z-index: 40;
-
   top: 68px;
   right: 412px;  
   width: 24px;
-  height: 24px;
-  
+  height: 24px;  
   justify-content: center;
   align-items:center;
   /* mix-blend-mode: multiply; */
@@ -124,8 +122,7 @@ body {
 
 .nav_burger::before {
   content: '';
-  position: absolute;
-  /* z-index: 98; */
+  position: absolute;  
   width: 24px;
   height: 2px;
   background-color: #333;
@@ -135,8 +132,7 @@ body {
 
 .nav_burger::after {
   content: '';
-  position: absolute;
-  /* z-index: 99; */
+  position: absolute;  
   width: 24px;
   height: 2px;
   background-color: #333;
@@ -156,14 +152,12 @@ body {
   transform: translateY(14px) rotate(-45deg);
 }
 
-.nav_burger:hover::before {
-  /* z-index: 99; */
-  background-color: rgb(37, 150, 190);
+.nav_burger:hover::before {  
+  background-color: var(--burgerblue);
 }
 
-.nav_burger:hover::after {
-  /* z-index: 99; */
-  background-color: rgb(37, 150, 190);
+.nav_burger:hover::after {  
+  background-color: var(--burgerblue);
 }
 
 .nav_burger.active:hover::before {  
@@ -174,77 +168,10 @@ body {
   background-color: white;
 }
 
-/* .lines {  
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  top: 0;
-  width: 24px;
-  height: 2px;
-  background-color: green;
-  margin: 2px 0;
-  width: 24px;
-  height: 2px;
-  
-  margin: 12px 0;  
-} */
-
-/* .nav_burger:hover::before {
-  content: ''; 
-  z-index: 99;
-  position: absolute;
-  background-color: rgb(43, 137, 226);
-  top: -6px;
-  width: 0px;
-  height: 2px;  
-  margin: 6px 0;
-  transform-origin: left;
-  transition: width 0.3s;
-}
-
-.nav_burger:hover::after {
-  content: ''; 
-  z-index: 99;
-  position: absolute;
-  background-color: rgb(43, 137, 226);
-  top: -6px;
-  width: 0px;
-  height: 2px;  
-  margin: 6px 0;
-  transform-origin: left;
-  transition: width 0.3s;
-} */
-
-.line_1:hover::before,
-.line_2:hover::before {  
-  z-index: 99;
-  /* background-color: pink;   */
-  width: 24px;
-  height: 2px;  
-  /* margin: 6px 0;   */
-}
-
-.line_1.active {
-  transition: 0.5s;
-  background-color: white;
-  transform: translateY(4px) rotate(45deg);
-  pointer-events: none;
-}
-
-.line_2.active {
-  transition: 0.5s;
-  background-color: white;
-  transform: translateY(-4px) rotate(-45deg);
-  pointer-events: none;
-}
-
-.big_menu {
-  /* display: none; */
-  /* position: absolute; */
+.big_menu {  
   position: fixed;
-  z-index: -1;
-  background-color: rgb(43, 165, 229);
+  z-index: -1;  
+  background-color: var(--burgerblue);
   box-shadow: 0 27px 53px 0 rgb(1 93 140 / 24%);
   top: 26px;
   right: 354px;
@@ -269,11 +196,6 @@ body {
   opacity: 1.0;
   transform: translateY(40px);
 }
-/* 
-.big_menu.menu_open .links a:nth-child(1) {
-  opacity: 1.0;
-  transform: translateY(90px);
-} */
 
 a:link {
   text-decoration: none;
@@ -366,8 +288,7 @@ footer span {
 
 .internal_links {
   width: 50%;
-  height: 100%;
-  /* display: grid; */
+  height: 100%;  
 }
 
 .internal_links ul,
@@ -382,13 +303,11 @@ footer span {
 
 .external_links {
   width: 50%;
-  height: 100%;
-  /* display: grid; */
+  height: 100%;  
 }
 
 .animate_underline {
-  position: relative;
-  /* display: block;	*/
+  position: relative;  
 }
 
 .animate_underline::before {
@@ -420,11 +339,9 @@ footer span {
 
 /* Carousel styles */
 
-.carousel_wrapper {
-  /* z-index: 999; */
+.carousel_wrapper {  
   display: flex;
-  align-items: center;
-  /* justify-content: normal; */
+  align-items: center;  
   width: 100vw;
   height: 75vh;
   background-color: var(--whitecolour);
@@ -506,6 +423,12 @@ footer span {
   height: 50px;
 }
 
+.quotes {
+  background-color: black;
+  color: lightgrey;
+  text-align: center;
+}
+
 /*
 -------------------------------------------------------------------------------------------------------
 INDEX PAGE STYLES
@@ -513,8 +436,7 @@ INDEX PAGE STYLES
 */
 
 .container_main {
-  background-color: var(--whitecolour);
-  /*width: 100vw;*/
+  background-color: var(--whitecolour);  
 }
 
 .main_content {
@@ -584,8 +506,7 @@ INDEX PAGE STYLES
 .hover_images {
   min-height: 325vh;
   margin: auto;
-  display: flex;
-  /* flex-direction: column;*/
+  display: flex;  
   background-color: var(--whitecolour);
 }
 
@@ -602,12 +523,9 @@ INDEX PAGE STYLES
 }
 
 .hover_box {
-  overflow: hidden;
-  /* margin-top: 20px;
-  margin-left: 40px; */
+  overflow: hidden;  
   transform-origin: center;
-  transition: transform 0.25s;
-  /* background-color: darkgoldenrod; */
+  transition: transform 0.25s;  
 }
 
 .hover_box video {
@@ -617,6 +535,7 @@ INDEX PAGE STYLES
 .hover_box:hover {
   filter: grayscale(0);
   transform: scale(1.025);
+
   /* Need to find a good custom cursor icon */
   cursor: url("../img/custom.svg"), pointer;
 }
@@ -632,18 +551,14 @@ INDEX PAGE STYLES
 .video_2 {
   background-color: var(--whitecolour);
   width: 435px;
-  height: 435px;
-  /* margin-top: 45px; */
+  height: 435px;  
   overflow: hidden;
   display: block;
 }
 
 .video_1 .clip {
   transform-origin: top left;
-  transform: scale(123%);
-  /* width: 600px;
-  height: 580px;
-  margin-left: -50px; */
+  transform: scale(123%);  
 }
 
 .video_2 .clip {
@@ -759,9 +674,7 @@ INDEX PAGE STYLES
 
 .faq_wrapper {
   background-color: black;
-  min-height: 200vh;
-  /* display: flex;
-  justify-content: center; */
+  min-height: 200vh;  
 }
 
 .dropdown_faq {
@@ -805,8 +718,7 @@ INDEX PAGE STYLES
   margin-top: 20px;
   color: grey;
   background-color: black;
-  font-size: 18px;
-  /* line-height: 24px;   */  
+  font-size: 18px;  
   opacity: 1.0;
 }
 
@@ -870,9 +782,7 @@ ABOUT PAGE STYLES
 }
 
 .about_wedo {
-  margin: auto;
-  /* width: 100%; */
-  /* height: 340vh; */
+  margin: auto;  
   background-color: lightgoldenrodyellow;
   display: grid;
   grid-template-areas: 'left right';
@@ -971,21 +881,14 @@ ABOUT PAGE STYLES
   background-color: #15141a;
 }
 
-.about_carousel {
-  /* margin: auto; */
+.about_carousel {  
   height: 100vh;
-  background-color: #15141a;
-  
-    /* z-index: 999; */
-    display: flex;
-    align-items: center;
-    /* justify-content: normal; */
-    width: 100vw;
-    /* height: 75vh; */
-    /* background-color: var(--whitecolour); */
-    overflow: hidden;
-  }
-
+  background-color: #15141a;   
+  display: flex;
+  align-items: center;   
+  width: 100vw;   
+  overflow: hidden;
+}
 
 /*
 -------------------------------------------------------------------------------------------------------
@@ -1055,10 +958,6 @@ CLIENTS PAGE STYLES
   margin-top: 14px;
   line-height: 24px;
 }
-
-/* .box_item:nth-child(odd) {
-  background-color: var(--whitecolour);
-} */
 
 .quotes_wrapper {
   height: 61vh;
@@ -1163,7 +1062,6 @@ WORK PAGE STYLES
   min-height: 200px;
 }
 
-
 /*
 -------------------------------------------------------------------------------------------------------
 RESPONSIVE SECTION - MEDIA QUERIES
@@ -1171,9 +1069,10 @@ RESPONSIVE SECTION - MEDIA QUERIES
 */
 
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
   body {
-    background-color: blue;
+    /* background-color: blue; */
     display: none;
   }
 }

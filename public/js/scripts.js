@@ -2,21 +2,19 @@
  
 /*
 Multiline comment in js
-*/
-
 // Single line comment in js
-
+*/
 
 // https://www.doc.govt.nz/nature/native-plants/
 
-function demo () {
-let quotesDiv = document.getElementById('quotes')
+function api() {
+   let quotesDiv = document.getElementById('quotes')
 
-fetch("https://stormy-harbor-45590.herokuapp.com/https://quiet-earth-90814.herokuapp.com/quotes/1")
-.then(res => res.json())
-.then(quote => {
-    quotesDiv.innerHTML += `<p> ${quote.text} </p>`
-})
+   fetch("https://stormy-harbor-45590.herokuapp.com/https://quiet-earth-90814.herokuapp.com/quotes/1")
+   .then(res => res.json())
+   .then(quote => {
+      quotesDiv.innerHTML += `<p> ${quote.text} </p>`
+   })
 }
 
 var clients = 
@@ -92,52 +90,32 @@ function donothing()
    console.log("hello there from js world!");
 }
 
-document.onclick = function(e) {
-   console.log(e.target.className);
-   console.log('');
-   // if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger' && e.target.className !== 'line_1' && e.target.className !== 'line_2')
+document.onclick = function(e) {   
    if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger active')
-   {
-      //console.log('hello');
+   {      
       const nav_menu = document.querySelector('.big_menu');
-      const menu_button = document.querySelector('.nav_burger');
-      // const l1 = document.querySelector('.line_1');
-      // const l2 = document.querySelector('.line_2');
+      const menu_button = document.querySelector('.nav_burger');      
 
       nav_menu.classList.remove('menu_open')
-      menu_button.classList.remove('active');
-      // l1.classList.remove('active');
-      // l2.classList.remove('active');
-   }
-   
+      menu_button.classList.remove('active');      
+   }   
 }
 
 function burger()
 {
    const menu_button = document.querySelector('.nav_burger');
-   const nav_menu = document.querySelector('.big_menu');
-   // const l1 = document.querySelector('.line_1');
-   // const l2 = document.querySelector('.line_2');
-
-   // let menu_open = false;
+   const nav_menu = document.querySelector('.big_menu');   
 
    menu_button.addEventListener('click', () => {
       nav_menu.classList.toggle('menu_open');
-      menu_button.classList.toggle('active');
-
-      // l1.classList.toggle('active');
-      // l2.classList.toggle('active');
-      // console.log('toggle');     
-      })
-   
+      menu_button.classList.toggle('active');  
+      })   
 }
 
 function opendiv()
-{
-   //var icon = document.querySelectorAll('.icon');
+{   
    const all_btn = document.querySelectorAll(".question_text");
-   console.log(all_btn);
-   //console.log(icon);
+   console.log(all_btn);   
 
    all_btn.forEach((item) => {
       item.addEventListener('click', (e) => {
@@ -194,10 +172,7 @@ function pausePlay()
 function showSuggestion()
 {
    const suggText = document.querySelectorAll('.suggestion_text');
-   //const suggImg = document.querySelectorAll('.suggestion_img');
-
-   //console.log(suggImg);
-
+   
    suggText.forEach(elem => {
       elem.addEventListener('mouseenter', () => {
          const img = elem.nextElementSibling;
