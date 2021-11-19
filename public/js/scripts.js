@@ -5,8 +5,9 @@ Multiline comment in js
 // Single line comment in js
 */
 
-// https://www.doc.govt.nz/nature/native-plants/
 
+// Array to store the text for the boxes for the native species section
+// https://www.doc.govt.nz/nature/native-plants/
 var clients =
    [
       {
@@ -79,6 +80,7 @@ function donothing() {
    console.log("hello there from js world!");
 }
 
+// this function allows the user to click outside the nav menu to close it
 document.onclick = function (e) {
    if (e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger active') {
       const nav_menu = document.querySelector('.big_menu');
@@ -89,6 +91,8 @@ document.onclick = function (e) {
    }
 }
 
+// Add an click event to the nav burger symbol so that
+// the nav menu will appear or close.
 function burger() {
    const menu_button = document.querySelector('.nav_burger');
    const nav_menu = document.querySelector('.big_menu');
@@ -99,20 +103,19 @@ function burger() {
    })
 }
 
+// Function to create many clickable areas that are used in the faq section
+// to make a div appear showing the answer to a question.
 function opendiv() {
    const all_btn = document.querySelectorAll(".question_text");
    console.log(all_btn);
 
    all_btn.forEach((item) => {
       item.addEventListener('click', (e) => {
-
-         console.log("Item");
-         console.log(item);
+         // When the user clicks on the question text the necessary document elements (faq_box, angle icon)
+         // are found and open classes toggled on them. This will make the angle rotate or the div appear.
          const next = item.nextElementSibling; // faq_box
          const ch = item.children[1];
-         console.log("Children");
-         console.log(ch);
-
+         
          const check = next.classList.toggle('faq_open');
          console.log(check);
          item.children[1].classList.toggle('open');
@@ -123,8 +126,12 @@ function opendiv() {
 function createboxes() {
    const box_parent = document.querySelector('.boxes_wrapper');
    let delay = 0;
+
    clients.forEach(elem => {
+      // Using a loop to create many 'box' divs and attach attributes for on-scroll animations
       const box_item_div = document.createElement('div');
+
+      // The scroll animation delay is calculated to create a staggered appearance effect
       let delayAmount = 100 * (delay % 4);
 
       box_item_div.classList.add('box_item');
@@ -132,6 +139,8 @@ function createboxes() {
       box_item_div.setAttribute('data-aos-delay', delayAmount);
       box_item_div.setAttribute('data-aos-duration', '500');
 
+      // Each box div will have a heading and text attached to it
+      // the text is stored locally in the 'clients' array
       box_item_div.innerHTML += '<h3>' + elem.title + '</h3>'
       box_item_div.innerHTML += '<p>' + elem.description + '</p>'
 
@@ -141,6 +150,8 @@ function createboxes() {
    })
 }
 
+// Play or pause a video clip in the hover_images section
+// when the user hovers over or leaves one.
 function pausePlay() {
    const clip = document.querySelectorAll('.clip');
    clip.forEach(elem => {
@@ -153,11 +164,18 @@ function pausePlay() {
    })
 }
 
+
+// Allow an image to appear and disappear as the user
+// mousesover and leaves the text in table of planting suggestions
+
 function showSuggestion() {
    const suggText = document.querySelectorAll('.suggestion_text');
 
    suggText.forEach(elem => {
       elem.addEventListener('mouseenter', () => {
+         // The img is the next element in the document after the text
+         // The img has opacity set to 0 initially
+         // But will transition to opacity 1 when mouseover happens
          const img = elem.nextElementSibling;
          img.classList.add('appear');
          console.log(img);
@@ -171,6 +189,10 @@ function showSuggestion() {
 }
 
 // https://www.daviddomoney.com/35-inspirational-gardening-quotes-and-famous-proverbs/
+
+
+// Quotes stored locally to be used for the section that updates on a timer
+// See function quotesTimer below
 
 var quote =
    [
@@ -212,11 +234,14 @@ function quotesTimer() {
    const quoteAuthorDiv = document.querySelector('.quote_author');
 
    setInterval(function () {
+      // Choose a random number up to the max
       let max = 6;
       let whichQuote = Math.floor(Math.random() * max);
 
       console.log(whichQuote);
 
+      // Use the random number to look up the text and author from the quotes stored locally
+      // Then insert the text into the document.
       quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span>';
       quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span>';
    }, 10000);
@@ -237,3 +262,28 @@ function api() {
          quotesDiv.innerHTML += `<p> ${quote.text} </p>`
       })
 }
+
+// API code used to randomly return one of six quotes stored on Heroku at
+// https://quiet-earth-90814.herokuapp.com/quotes/?
+
+/*
+const express = require("express");
+const app = express();
+const importData = require("./data.json");
+
+let port = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+	res.send("Hello World")
+})
+
+app.get("/quotes/:id", (req, res) => {
+	res.send(importData[req.params.id]);
+});
+
+console.log(importData[0].name);
+
+app.listen(port, () => {
+	console.log(`Example app is listening on port http://localhost:${port}`);
+});
+*/

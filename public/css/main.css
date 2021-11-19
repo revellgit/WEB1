@@ -67,8 +67,7 @@ body {
   transform: translateY(-40px);
 }
 
-.links a {
-  /* z-index: 40; */
+.links a {  
   display: block;
   font-size: 30px;
   margin-bottom: 20px;
@@ -97,7 +96,8 @@ body {
   z-index: 40;
   top: 50px;
   left: 366px;
-  /* filter: invert(100%); */
+  filter: invert(100%);
+  mix-blend-mode: difference;
 }
 
 .nav_logo i {
@@ -115,9 +115,7 @@ body {
   height: 24px;  
   justify-content: center;
   align-items:center;
-  /* mix-blend-mode: multiply; */
-  /* filter: invert(100%); */
-  /* background-color: white; */
+  mix-blend-mode: difference; 
 }
 
 .nav_burger::before {
@@ -535,8 +533,7 @@ INDEX PAGE STYLES
 .hover_box:hover {
   filter: grayscale(0);
   transform: scale(1.025);
-
-  /* Need to find a good custom cursor icon */
+  /* custom cursor icon */
   cursor: url("../img/custom.svg"), pointer;
 }
 
@@ -817,10 +814,6 @@ ABOUT PAGE STYLES
   margin-bottom: 250px;
 }
 
-/* .wedo_section1 > div {
-  background-color: lightseagreen;
-} */
-
 .section1_text {
   grid-area: words1;
 }
@@ -973,13 +966,11 @@ ABOUT PAGE STYLES
 .links_catergories {
   margin: auto;
   height: 100%;
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: grid;  
   grid-template-columns: 30% 40% 30%;
-  grid-template-rows: 1fr;
-  
-  /* grid-template-rows: 1fr 1fr; */
+  grid-template-rows: 1fr;  
 }
+
 .links_title {
   margin-top: 25px;
 }
@@ -997,8 +988,7 @@ ABOUT PAGE STYLES
 }
 
 .about_gardens {
-  color: black;
-  /* background-color: aqua; */
+  color: black;  
 }
 
 .about_gardens ul,
@@ -1020,18 +1010,6 @@ ABOUT PAGE STYLES
   height: 105vh;
   background-color: cadetblue;
 }
-
-/* .about_quotes {
-  margin: auto;
-  height: 50vh;
-  background-color: darkcyan;
-}
-
-.about_awards {
-  margin: auto;
-  height: 45vh;
-  background-color: #15141a;
-} */
 
 .about_carousel { 
   width: 100vw;  
@@ -1213,8 +1191,7 @@ WORK PAGE STYLES
   grid-gap: 2px;
 }
 
-.each_client {
-  /* background-color: grey; */
+.each_client {  
   max-width: 280px;
   max-height: 280px;
   display: flex;
@@ -1223,9 +1200,6 @@ WORK PAGE STYLES
 }
 
 .each_client img {  
-  /* object-fit: cover; */
-  /* top: 50%; */
-  /* transform: translateY(50%); */
   max-width: 100%;
   max-height: 100%;
   filter: grayscale(100%);
@@ -1242,6 +1216,6 @@ RESPONSIVE SECTION - MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   body {
     /* background-color: blue; */
-    display: none;
+    /* display: none; */
   }
 }
