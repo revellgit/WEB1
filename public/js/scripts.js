@@ -1,5 +1,5 @@
 // Javascript file : scripts.js
- 
+
 /*
 Multiline comment in js
 // Single line comment in js
@@ -7,142 +7,127 @@ Multiline comment in js
 
 // https://www.doc.govt.nz/nature/native-plants/
 
-function api() {
-   let quotesDiv = document.getElementById('quotes')
-
-   fetch("https://stormy-harbor-45590.herokuapp.com/https://quiet-earth-90814.herokuapp.com/quotes/1")
-   .then(res => res.json())
-   .then(quote => {
-      quotesDiv.innerHTML += `<p> ${quote.text} </p>`
-   })
-}
-
-var clients = 
-   [         
+var clients =
+   [
       {
-         "title": "Beech forest", 
+         "title": "Beech forest",
          "description": "New Zealand's beech forests are made up of five species of southern beech."
       },
-      { 
-         "title": "Cabbage tree", 
-         "description": "The cabbage tree is one of the most distinctive trees in the New Zealand landscape, especially on farms. They grow all over the country, but prefer wet, open areas like swamps." 
+      {
+         "title": "Cabbage tree",
+         "description": "The cabbage tree is one of the most distinctive trees in the New Zealand landscape, especially on farms. They grow all over the country, but prefer wet, open areas like swamps."
       },
       {
-         "title": "Chatham Islands plants", 
+         "title": "Chatham Islands plants",
          "description": "The Chatham Islands have been isolated for more than 80 million years, long enough to develop many plants found nowhere else."
       },
       {
-         "title": "Coastal cress", 
+         "title": "Coastal cress",
          "description": "The coastal cress is one of New Zealand's lesser-known endangered species, but there is considerable concern about the decline of this plant."
       },
       {
-         "title": "Dactylanthus", 
+         "title": "Dactylanthus",
          "description": "Dactylanthus is New Zealand's only indigenous fully parasitic flowering plant."
       },
       {
-         "title": "New Zealand ferns", 
+         "title": "New Zealand ferns",
          "description": "New Zealand has an unusually high number of fern species for a temperate country and about 40 per cent of these species occur nowhere else in the world."
       },
       {
-         "title": "Freshwater algae", 
+         "title": "Freshwater algae",
          "description": "Green slime and brown scum on stream beds is usually regarded as an unattractive nuisance however, it is a vital part of stream ecosystems."
       },
       {
-         "title": "Golden sand sedge", 
+         "title": "Golden sand sedge",
          "description": "Pīkao or pīngao is a native sand-binding sedge that plays an important role in New Zealand's dune ecosystems."
       },
       {
-         "title": "Harakeke/flax", 
+         "title": "Harakeke/flax",
          "description": "There are two identified species of flax in New Zealand - common flax (harakeke) and mountain flax (wharariki)."
       },
       {
-         "title": "Kakabeak/Ngutukaka", 
+         "title": "Kakabeak/Ngutukaka",
          "description": "Kākābeak is named for its beautiful red flowers, which hang in clusters of 15-20 blooms and are shaped like a kaka's beak."
       },
       {
-         "title": "Kauri", 
+         "title": "Kauri",
          "description": "Kauri are among the world's mightiest trees, growing to over 50 m tall, with trunk girths up to 16 m, and living for over 2,000 years."
       },
       {
-         "title": "Kettle hold plants", 
+         "title": "Kettle hold plants",
          "description": "Kettle holes are a feature of a glaciated landscape. Plants in these habitats have a remarkable lifecycle."
       },
       {
-         "title": "Kowhai", 
+         "title": "Kowhai",
          "description": "The kōwhai is one of the best known native trees in New Zealand and it’s our unofficial national flower."
       },
       {
-         "title": "Lancewood/Horoeka", 
+         "title": "Lancewood/Horoeka",
          "description": "Lancewood, or horoeka, is a unique, small tree with lance-like foliage that changes dramatically as the tree matures."
       },
       {
-         "title": "Mount Cook buttercup", 
+         "title": "Mount Cook buttercup",
          "description": "The Mount Cook buttercup is the world's largest buttercup and is also known as the giant buttercup or mountain buttercup. It used to be known as the Mount Cook lily."
       },
       {
-         "title": "Nikau palm", 
+         "title": "Nikau palm",
          "description": "The nīkau palm is the southernmost member of the palm family and New Zealand's only native palm species."
       }
    ]
 
-function donothing() 
-{
+function donothing() {
    console.log("hello there from js world!");
 }
 
-document.onclick = function(e) {   
-   if(e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger active')
-   {      
+document.onclick = function (e) {
+   if (e.target.className !== 'big_menu menu_open' && e.target.className !== 'nav_burger active') {
       const nav_menu = document.querySelector('.big_menu');
-      const menu_button = document.querySelector('.nav_burger');      
+      const menu_button = document.querySelector('.nav_burger');
 
       nav_menu.classList.remove('menu_open')
-      menu_button.classList.remove('active');      
-   }   
+      menu_button.classList.remove('active');
+   }
 }
 
-function burger()
-{
+function burger() {
    const menu_button = document.querySelector('.nav_burger');
-   const nav_menu = document.querySelector('.big_menu');   
+   const nav_menu = document.querySelector('.big_menu');
 
    menu_button.addEventListener('click', () => {
       nav_menu.classList.toggle('menu_open');
-      menu_button.classList.toggle('active');  
-      })   
+      menu_button.classList.toggle('active');
+   })
 }
 
-function opendiv()
-{   
+function opendiv() {
    const all_btn = document.querySelectorAll(".question_text");
-   console.log(all_btn);   
+   console.log(all_btn);
 
    all_btn.forEach((item) => {
       item.addEventListener('click', (e) => {
-   
-         console.log("Item");     
+
+         console.log("Item");
          console.log(item);
          const next = item.nextElementSibling; // faq_box
          const ch = item.children[1];
          console.log("Children");
          console.log(ch);
-         
+
          const check = next.classList.toggle('faq_open');
          console.log(check);
-         item.children[1].classList.toggle('open');         
+         item.children[1].classList.toggle('open');
       })
    })
 }
 
-function createboxes()
-{   
-   const box_parent = document.querySelector('.boxes_wrapper');   
+function createboxes() {
+   const box_parent = document.querySelector('.boxes_wrapper');
    let delay = 0;
-   clients.forEach(elem => {     
+   clients.forEach(elem => {
       const box_item_div = document.createElement('div');
       let delayAmount = 100 * (delay % 4);
 
-      box_item_div.classList.add('box_item');      
+      box_item_div.classList.add('box_item');
       box_item_div.setAttribute('data-aos', 'fade-up');
       box_item_div.setAttribute('data-aos-delay', delayAmount);
       box_item_div.setAttribute('data-aos-duration', '500');
@@ -152,12 +137,11 @@ function createboxes()
 
       box_parent.appendChild(box_item_div);
       delay += 1;
-      console.log(delayAmount);      
+      console.log(delayAmount);
    })
 }
 
-function pausePlay()
-{
+function pausePlay() {
    const clip = document.querySelectorAll('.clip');
    clip.forEach(elem => {
       elem.addEventListener('mouseenter', () => {
@@ -169,14 +153,13 @@ function pausePlay()
    })
 }
 
-function showSuggestion()
-{
+function showSuggestion() {
    const suggText = document.querySelectorAll('.suggestion_text');
-   
+
    suggText.forEach(elem => {
       elem.addEventListener('mouseenter', () => {
          const img = elem.nextElementSibling;
-            img.classList.add('appear');
+         img.classList.add('appear');
          console.log(img);
       })
       elem.addEventListener('mouseout', () => {
@@ -192,47 +175,65 @@ function showSuggestion()
 var quote =
    [
       {
-         "text" : "If you have a garden in your library, everything will be complete.",
-         "author" : "Marcus Tullius Cicero, Letter to Varro, 1st century AD"
+         "text": "If you have a garden in your library, everything will be complete.",
+         "author": "Marcus Tullius Cicero, Letter to Varro, 1st century AD"
       },
 
       {
-         "text" : "Life begins the day you start a garden.",
-         "author" : "Chinese proverb"
+         "text": "Life begins the day you start a garden.",
+         "author": "Chinese proverb"
       },
 
       {
-         "text" : "There are no gardening mistakes, only experiments.",
-         "author" : "Janet Kilburn Phillips"
+         "text": "There are no gardening mistakes, only experiments.",
+         "author": "Janet Kilburn Phillips"
       },
 
       {
-         "text" : "Gardening adds years to your life and life to your years. ",
-         "author" : "Unknown"
+         "text": "Gardening adds years to your life and life to your years. ",
+         "author": "Unknown"
       },
 
       {
-         "text" : "A society grows great when old men plant trees whose shade they know they shall never sit in.",
-         "author" : "Greek proverb"
+         "text": "A society grows great when old men plant trees whose shade they know they shall never sit in.",
+         "author": "Greek proverb"
       },
       {
-         "text" : "Garden as though you will live forever.",
-         "author" : "William Kent"
+         "text": "Garden as though you will live forever.",
+         "author": "William Kent"
       }
    ]
 
-function quotesTimer()
- {
-	 const quoteTextDiv = document.querySelector('.quote_text');
-    const quoteAuthorDiv = document.querySelector('.quote_author');
+// Display a random quote and author that is stored as local data (above)
+// Add the text elements to a div
 
-	 setInterval(function () {
-		 let max = 6;
-		 let whichQuote = Math.floor(Math.random() * max);
+function quotesTimer() {
+   const quoteTextDiv = document.querySelector('.quote_text');
+   const quoteAuthorDiv = document.querySelector('.quote_author');
 
-		 console.log(whichQuote);
+   setInterval(function () {
+      let max = 6;
+      let whichQuote = Math.floor(Math.random() * max);
 
-		 quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span>';
-       quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span>';
-	 }, 10000);	 
- }
+      console.log(whichQuote);
+
+      quoteTextDiv.innerHTML = '<span>' + quote[whichQuote].text + '</span>';
+      quoteAuthorDiv.innerHTML = '<span>' + quote[whichQuote].author + '</span>';
+   }, 10000);
+}
+
+// Get/Fetch a random quote (with id) from an API stored on Heroku
+// Uses a proxy app to avoid CORS errors
+
+function api() {
+   let quotesDiv = document.getElementById('quotes')
+
+   let max = 6;
+   let whichQuote = Math.floor(Math.random() * max);
+
+   fetch("https://stormy-harbor-45590.herokuapp.com/https://quiet-earth-90814.herokuapp.com/quotes/" + whichQuote)
+      .then(res => res.json())
+      .then(quote => {
+         quotesDiv.innerHTML += `<p> ${quote.text} </p>`
+      })
+}
